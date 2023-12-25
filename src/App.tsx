@@ -1,10 +1,12 @@
 import React from 'react';
+// import UserList from "./components/UserList/UserList";
 import './App.css';
+import Main from "./components/Main/Main";
 
 function App() {
   return (
     <div className="App">
-
+      <Main/>
     </div>
   );
 }
