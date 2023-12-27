@@ -3,16 +3,20 @@ import {Grid} from '@mui/material'
 // import MiniDrawer from "../MiniDrawer/MiniDrawer";
 import SideBar from "../SideBar/SideBar";
 import UserList from "../UserList/UserList";
+import Chat from "../Chat/Chat";
+import Divider from "@mui/material/Divider";
 
 const Main: FC = () => {
   return (
-    <Grid  height={'100vh'} container>
+    <Grid height={'100vh'} container>
       <SideBar/>
       <Grid height={'100vh'} minWidth={345} item xs={2.5}>
         <UserList/>
       </Grid>
-
-      <Grid bgcolor={'primary.dark'} item xs>asd</Grid>
+      <Divider orientation="vertical" flexItem/>
+      <Grid container item xs>
+        <Chat userId={1}/>
+      </Grid>
     </Grid>
   );
 };
