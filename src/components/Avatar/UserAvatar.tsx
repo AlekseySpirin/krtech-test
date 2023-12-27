@@ -1,23 +1,24 @@
 import React, {FC} from 'react';
 import Avatar, {AvatarProps} from '@mui/material/Avatar';
-import { styled } from '@mui/material/styles';
+import {styled} from '@mui/material/styles';
 import Badge from '@mui/material/Badge';
-
 
 interface IUserAvatarProps {
   name: string,
+  variantBadge?: 'dot' | 'standard' | undefined
 
 }
 
-const UserAvatar:FC<IUserAvatarProps & AvatarProps> = ({name,...props}) => {
+const UserAvatar: FC<IUserAvatarProps & AvatarProps> = ({name, variantBadge, ...props}) => {
 
-  const StyledBadge = styled(Badge)(({ theme }) => ({
+  const StyledBadge = styled(Badge)(({theme}) => ({
     '& .MuiBadge-badge': {
       backgroundColor: '#44b700',
       color: '#44b700',
       boxShadow: `0 0 0 2px ${theme.palette.background.paper}`,
     },
   }));
+
   function stringToColor(string: string) {
     let hash = 0;
     let i;
@@ -46,11 +47,12 @@ const UserAvatar:FC<IUserAvatarProps & AvatarProps> = ({name,...props}) => {
       children: `${name.split(' ')[0][0]}${name.split(' ')[1][0]}`,
     };
   }
+
   return (
     <StyledBadge
       overlap="circular"
-      anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
-      variant="dot"
+      anchorOrigin={{vertical: 'bottom', horizontal: 'right'}}
+      variant={variantBadge}
     >
       <Avatar {...stringAvatar(name)} alt={'Аватар пользователя'} {...props} />
     </StyledBadge>

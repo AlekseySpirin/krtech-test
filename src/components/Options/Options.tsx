@@ -1,10 +1,9 @@
 import React, {FC} from 'react';
-import {Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText} from "@mui/material";
+import {Badge, Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText} from "@mui/material";
 import SettingsIcon from '@mui/icons-material/Settings';
 import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 import {ReactJSXElement} from "@emotion/react/types/jsx-namespace";
-
-
+import {userData} from "../../data/UserData";
 
 
 interface IOption {
@@ -20,15 +19,18 @@ interface OptionsProps {
 
 const Options: FC<OptionsProps> = ({open}) => {
 
+  const totalMessage = userData.reduce((sum, user) => {
+    return sum + (user.messages.length > 0 ? 1 : 0);
+  }, 0);
 
   const optionList: IOption[] = [
     {
       name: 'Диалоги',
-      icon: <QuestionAnswerIcon />
+      icon: <QuestionAnswerIcon/>
     },
     {
       name: 'Настройки',
-      icon: <SettingsIcon />
+      icon: <SettingsIcon/>
     }
   ]
   return (
@@ -79,9 +81,31 @@ const Options: FC<OptionsProps> = ({open}) => {
                   color: '#fff'
                 }}
               >
-                {option.icon}
+                <Badge
+                  invisible={open}
+                  badgeContent={ option.name === 'Диалоги' ? totalMessage : null}
+                  color={'error'}
+                  max={999}
+                  anchorOrigin={{
+                    vertical: 'bottom',
+                    horizontal: 'right',
+                  }}
+                >
+                  {option.icon}
+                </Badge>
               </ListItemIcon>
-              <ListItemText  primary={option.name} sx={{opacity: open ? 1 : 0, color: '#fff'}}/>
+
+              <ListItemText primary={option.name} sx={{opacity: open ? 1 : 0, color: '#fff'}}/>
+              <Badge
+                invisible={!open}
+                badgeContent={ option.name === 'Диалоги' ? totalMessage : null}
+                color={'error'}
+                max={999}
+                anchorOrigin={{
+                  vertical: 'bottom',
+                  horizontal: 'right',
+                }}
+              />
             </ListItemButton>
           </ListItem>
         ))}

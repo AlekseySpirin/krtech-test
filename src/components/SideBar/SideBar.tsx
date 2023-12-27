@@ -32,26 +32,6 @@ const user: IUser = {
   online: true
 }
 
-const userList: IUser[] = [
-  {
-    id: 1,
-    firstName: 'Alex',
-    secondName: 'Spirin',
-    avatar: {
-      src: 'https://www.epicdope.com/wp-content/uploads/2023/04/Saitama.jpg'
-    },
-    online: true,
-  },
-  {
-    id: 2,
-    firstName: 'Roman',
-    secondName: 'Spirin',
-    avatar: {
-      src: 'https://w.forfun.com/fetch/1b/1bbc9da9e850f4f360367b4223c0f593.jpeg'
-    },
-    online: true,
-  }
-]
 
 const openedMixin = (theme: Theme): CSSObject => ({
 
@@ -123,9 +103,9 @@ const SideBar: FC = () => {
     <Box height={'100vh'}>
       <Drawer variant="permanent" open={isDrawerOpen} onClose={() => setIsDrawerOpen(false)
       }>
-        <DrawerHeader>
+        <DrawerHeader sx={{padding: isDrawerOpen ? '40px' : '8px'}}>
           <UserAvatar
-            sx={{width: !isDrawerOpen ? 56 : 100, height: !isDrawerOpen ? 56 : 100, border: '2px solid white'}}
+            sx={{width: !isDrawerOpen ? 48 : 100, height: !isDrawerOpen ? 48 : 100, border: '2px solid white'}}
             name={`${user.firstName} ${user.secondName}`}
             src={`${user.avatar.src}`}
           />
