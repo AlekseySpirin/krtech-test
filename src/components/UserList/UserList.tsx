@@ -1,8 +1,31 @@
 import React, {FC, useState} from 'react';
-import {Box, Input, List, ListItem, ListItemAvatar, ListItemButton, ListItemText, Stack,} from "@mui/material";
+import {
+  Badge,
+  BadgeProps,
+  Box,
+  Input,
+  List,
+  ListItem,
+  ListItemAvatar,
+  ListItemButton,
+  ListItemText,
+  Stack,
+} from "@mui/material";
 import UserAvatar from "../Avatar/UserAvatar";
-import {userData} from "../data/UserData"
+import {userData} from "../../data/UserData"
+import {styled} from '@mui/material/styles';
+import Divider from "@mui/material/Divider";
 
+const StyledBadge = styled(Badge)<BadgeProps>(({theme}) => ({
+  '& .MuiBadge-badge': {
+
+    right: -20,
+    top: 3,
+    border: `1px solid ${theme.palette.background.paper}`,
+    borderRadius: '50%',
+    padding: '12px 9px',
+  },
+}));
 
 const UserList: FC = () => {
   const [filterValue, setFilterValue] = useState<string>('');
@@ -14,7 +37,7 @@ const UserList: FC = () => {
 
   return (
     <Box height={'92%'} width={'100%'}>
-      <Stack justifyContent={'center'} alignItems={'center'} minHeight={'70px'} width={'100%'} direction={'row'}>
+      <Stack  alignItems={'center'} justifyContent={'center'} minHeight={'70px'} width={'100%'} direction={'row'}>
         {/*<Input placeholder={"Поиск"}*/}
         {/*       type="search"*/}
         {/*       classes={{ inputTypeSearch: 'MuiFilledInput-inputTypeSearch' }}*/}
@@ -46,7 +69,9 @@ const UserList: FC = () => {
                placeholder={'Поиск'}
                onChange={(e) => setFilterValue(e.target.value)}
         />
+
       </Stack>
+      <Divider />
       <List disablePadding sx={{
         width: '100%',
         bgcolor: 'background.paper',
@@ -82,10 +107,10 @@ const UserList: FC = () => {
               }}
             >
               <ListItemAvatar>
-                <UserAvatar variantBadge={user.online ? 'dot' : 'standard'}
+                <UserAvatar variantBadge={user.online.status ? 'dot' : 'standard'}
                             src={index % 2 === 0 ? user.avatar : ''} name={`${user.first_name} ${user.last_name}`}/>
               </ListItemAvatar>
-              <Stack direction={'row'} width={'100%'}>
+              <Box width={'100%'} display={'flex'}   alignItems={'center'}>
                 <ListItemText
                   secondaryTypographyProps={{
                     width: '250px',
@@ -101,6 +126,11 @@ const UserList: FC = () => {
                   }
                 />
                 <ListItemText
+                  primary={
+                    user.messages.length > 0
+                      ? user.messages[user.messages.length - 1].time
+                      : user.created?.time
+                  }
                   primaryTypographyProps={{
                     textAlign: 'center',
                     color: '#114475B2',
@@ -111,17 +141,17 @@ const UserList: FC = () => {
                     lineHeight: 'normal',
                     letterSpacing: '0.4px',
                   }}
-                  primary={
-                    user.messages.length > 0
-                      ? user.messages[user.messages.length - 1].time
-                      : ``
-                  }
-                />
-              </Stack>
+                  secondary={<StyledBadge badgeContent={user.messages.length}
+                                          color={'primary'}
+                                          max={999}
+                  />}
+                                  />
+              </Box>
             </ListItemButton>
           </ListItem>
         ))}
       </List>
+
     </Box>
     // <div className={Users()}>
     //     <ul className={UsersList()}>

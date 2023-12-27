@@ -24,7 +24,15 @@ type IUser = {
   gender: string;
   ip_address: string;
   avatar: string;
-  online: boolean;
+  created?: {
+    date: string;
+    time: string;
+  }
+  online: {
+    status: boolean;
+    startTime: string;
+    endTime: string;
+  };
   messages: IMessage[]
 
 };
@@ -39,7 +47,15 @@ export const userData: IUser[] = [
     gender: "Female",
     ip_address: "156.100.181.180",
     avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-    online: false,
+    created: {
+      date: "26 декабря 2023",
+      time: "12:30",
+    },
+    online: {
+      status: false,
+      startTime: '11:45',
+      endTime: '12:45'
+    },
     messages: [
       {
         id: "message_1",
@@ -112,7 +128,15 @@ export const userData: IUser[] = [
     gender: "Bigender",
     ip_address: "199.214.126.227",
     avatar: "https://robohash.org/quiautblanditiis.png?size=50x50&set=set1",
-    online: true,
+    created: {
+      date: "26 декабря 2023",
+      time: "12:30",
+    },
+    online: {
+      status: true,
+      startTime: '11:45',
+      endTime: '12:45'
+    },
     messages: []
   },
   {
@@ -123,7 +147,15 @@ export const userData: IUser[] = [
     gender: "Female",
     ip_address: "18.186.187.12",
     avatar: "https://robohash.org/culpadolorumlibero.png?size=50x50&set=set1",
-    online: true,
+    created: {
+      date: "26 декабря 2023",
+      time: "12:30",
+    },
+    online: {
+      status: true,
+      startTime: '11:45',
+      endTime: '12:45'
+    },
     messages: []
   },
   {
@@ -134,7 +166,11 @@ export const userData: IUser[] = [
     gender: "Male",
     ip_address: "56.247.55.96",
     avatar: "https://robohash.org/quoreiciendisnihil.png?size=50x50&set=set1",
-    online: false,
+    online: {
+      status: false,
+      startTime: '11:45',
+      endTime: '12:45'
+    },
     messages: [
       {
         id: "message_1",
@@ -206,7 +242,11 @@ export const userData: IUser[] = [
     gender: "Female",
     ip_address: "167.8.109.90",
     avatar: "https://robohash.org/velearumassumenda.png?size=50x50&set=set1",
-    online: true,
+    online: {
+      status: true,
+      startTime: '11:45',
+      endTime: '12:45'
+    },
     messages: [
       {
         id: "message_1",
@@ -278,7 +318,11 @@ export const userData: IUser[] = [
     gender: "Male",
     ip_address: "99.170.231.71",
     avatar: "https://robohash.org/ipsumquisquamaut.png?size=50x50&set=set1",
-    online: true,
+    online: {
+      status: true,
+      startTime: '11:45',
+      endTime: '12:45'
+    },
     messages: [
       {
         id: "message_1",
@@ -350,7 +394,11 @@ export const userData: IUser[] = [
     gender: "Male",
     ip_address: "72.44.226.190",
     avatar: "https://robohash.org/cumculpavoluptas.png?size=50x50&set=set1",
-    online: false,
+    online: {
+      status: false,
+      startTime: '11:45',
+      endTime: '12:45'
+    },
     messages: [
       {
         id: "message_1",
@@ -422,7 +470,11 @@ export const userData: IUser[] = [
     gender: "Male",
     ip_address: "82.104.3.160",
     avatar: "https://robohash.org/voluptatemnamqui.png?size=50x50&set=set1",
-    online: false,
+    online: {
+      status: false,
+      startTime: '11:45',
+      endTime: '12:45'
+    },
     messages: [
       {
         id: "message_1",
@@ -494,7 +546,11 @@ export const userData: IUser[] = [
     gender: "Male",
     ip_address: "36.92.37.8",
     avatar: "https://robohash.org/sequihicfuga.png?size=50x50&set=set1",
-    online: true,
+    online: {
+      status: true,
+      startTime: '11:45',
+      endTime: '12:45'
+    },
     messages: [
       {
         id: "message_1",
@@ -566,7 +622,11 @@ export const userData: IUser[] = [
     gender: "Female",
     ip_address: "111.216.240.75",
     avatar: "https://robohash.org/placeatetdignissimos.png?size=50x50&set=set1",
-    online: false,
+    online: {
+      status: false,
+      startTime: '11:45',
+      endTime: '12:45'
+    },
     messages: [
       {
         id: "message_1",
@@ -638,7 +698,11 @@ export const userData: IUser[] = [
     gender: "Male",
     ip_address: "109.97.247.107",
     avatar: "https://robohash.org/natusodionostrum.png?size=50x50&set=set1",
-    online: false,
+    online: {
+      status: true,
+      startTime: '11:45',
+      endTime: '12:45'
+    },
     messages: [
       {
         id: "message_1",
@@ -710,7 +774,11 @@ export const userData: IUser[] = [
     gender: "Female",
     ip_address: "173.100.159.159",
     avatar: "https://robohash.org/cupiditateperspiciatisfugiat.png?size=50x50&set=set1",
-    online: false,
+    online: {
+      status: true,
+      startTime: '11:45',
+      endTime: '12:45'
+    },
     messages: [
       {
         id: "message_1",
@@ -782,7 +850,11 @@ export const userData: IUser[] = [
     gender: "Female",
     ip_address: "57.190.48.12",
     avatar: "https://robohash.org/rationedignissimosaut.png?size=50x50&set=set1",
-    online: true,
+    online: {
+      status: true,
+      startTime: '11:45',
+      endTime: '12:45'
+    },
     messages: [
       {
         id: "message_1",
@@ -854,7 +926,11 @@ export const userData: IUser[] = [
     gender: "Female",
     ip_address: "194.93.10.200",
     avatar: "https://robohash.org/voluptasquasicommodi.png?size=50x50&set=set1",
-    online: false,
+    online: {
+      status: false,
+      startTime: '11:45',
+      endTime: '12:45'
+    },
     messages: [
       {
         id: "message_1",
@@ -926,7 +1002,11 @@ export const userData: IUser[] = [
     gender: "Female",
     ip_address: "175.100.149.239",
     avatar: "https://robohash.org/liberovoluptasvel.png?size=50x50&set=set1",
-    online: true,
+    online: {
+      status: true,
+      startTime: '11:45',
+      endTime: '12:45'
+    },
     messages: [
       {
         id: "message_1",
@@ -998,7 +1078,11 @@ export const userData: IUser[] = [
     gender: "Male",
     ip_address: "109.97.247.107",
     avatar: "https://robohash.org/natusodionostrum.png?size=50x50&set=set1",
-    online: false,
+    online: {
+      status: true,
+      startTime: '11:45',
+      endTime: '12:45'
+    },
     messages: [
       {
         id: "message_1",
@@ -1070,7 +1154,11 @@ export const userData: IUser[] = [
     gender: "Male",
     ip_address: "109.97.247.107",
     avatar: "https://robohash.org/natusodionostrum.png?size=50x50&set=set1",
-    online: false,
+    online: {
+      status: true,
+      startTime: '11:45',
+      endTime: '12:45'
+    },
     messages: [
       {
         id: "message_1",
@@ -1142,7 +1230,11 @@ export const userData: IUser[] = [
     gender: "Male",
     ip_address: "109.97.247.107",
     avatar: "https://robohash.org/natusodionostrum.png?size=50x50&set=set1",
-    online: false,
+    online: {
+      status: false,
+      startTime: '11:45',
+      endTime: '12:45'
+    },
     messages: [
       {
         id: "message_1",
@@ -1214,7 +1306,11 @@ export const userData: IUser[] = [
     gender: "Male",
     ip_address: "109.97.247.107",
     avatar: "https://robohash.org/natusodionostrum.png?size=50x50&set=set1",
-    online: false,
+    online: {
+      status: true,
+      startTime: '11:45',
+      endTime: '12:45'
+    },
     messages: [
       {
         id: "message_1",
@@ -1286,7 +1382,11 @@ export const userData: IUser[] = [
     gender: "Male",
     ip_address: "109.97.247.107",
     avatar: "https://robohash.org/natusodionostrum.png?size=50x50&set=set1",
-    online: false,
+    online: {
+      status: true,
+      startTime: '11:45',
+      endTime: '12:45'
+    },
     messages: [
       {
         id: "message_1",
@@ -1358,7 +1458,11 @@ export const userData: IUser[] = [
     gender: "Male",
     ip_address: "109.97.247.107",
     avatar: "https://robohash.org/natusodionostrum.png?size=50x50&set=set1",
-    online: false,
+    online: {
+      status: true,
+      startTime: '11:45',
+      endTime: '12:45'
+    },
     messages: [
       {
         id: "message_1",
@@ -1430,7 +1534,11 @@ export const userData: IUser[] = [
     gender: "Male",
     ip_address: "109.97.247.107",
     avatar: "https://robohash.org/natusodionostrum.png?size=50x50&set=set1",
-    online: false,
+    online: {
+      status: false,
+      startTime: '11:45',
+      endTime: '12:45'
+    },
     messages: [
       {
         id: "message_1",
@@ -1502,7 +1610,11 @@ export const userData: IUser[] = [
     gender: "Male",
     ip_address: "109.97.247.107",
     avatar: "https://robohash.org/natusodionostrum.png?size=50x50&set=set1",
-    online: false,
+    online: {
+      status: false,
+      startTime: '11:45',
+      endTime: '12:45'
+    },
     messages: [
       {
         id: "message_1",
@@ -1574,7 +1686,11 @@ export const userData: IUser[] = [
     gender: "Male",
     ip_address: "109.97.247.107",
     avatar: "https://robohash.org/natusodionostrum.png?size=50x50&set=set1",
-    online: false,
+    online: {
+      status: true,
+      startTime: '11:45',
+      endTime: '12:45'
+    },
     messages: [
       {
         id: "message_1",
