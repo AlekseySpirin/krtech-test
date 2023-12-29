@@ -1,13 +1,14 @@
 import React, {FC} from 'react';
-import { Box, Grid, Input, Stack, Typography} from "@mui/material";
+import {Box, Grid, Input, Stack, Typography} from "@mui/material";
 import Divider from "@mui/material/Divider";
 import {userData} from "../../data/UserData";
-import UserAvatar from "../Avatar/UserAvatar";
+
 
 interface ChatProps {
   userId: number;
 }
-const Chat: FC<ChatProps> = ({ userId }) => {
+
+const Chat: FC<ChatProps> = ({userId}) => {
 
   const currentUser = userData.find(user => user.id === userId);
 
@@ -38,9 +39,10 @@ const Chat: FC<ChatProps> = ({ userId }) => {
           lineHeight: '20px',
           letterSpacing: '0.4px',
         }}>
-          {`Avada Kedavra`}
+          {`${currentUser.first_name} ${currentUser.last_name}`}
         </Typography>
         <Typography variant={"h6"}
+                    textAlign={'center'}
                     sx={{
                       color: '#2580DB',
                       paddingTop: '7px',
@@ -58,17 +60,72 @@ const Chat: FC<ChatProps> = ({ userId }) => {
       <Grid item xs sx={{
         backgroundColor: '#E7ECF1'
       }}>
-        <Box>
+        <Box display={'grid'}>
           {currentUser.messages.map((message) => (
-            <Grid container key={message.id}>
-              <Grid item>
-                <UserAvatar variantBadge={currentUser.online.status ? 'dot' : 'standard'}
-                            src={currentUser.avatar} name={`${currentUser.first_name} ${currentUser.last_name}`} />
-              </Grid>
-              <Grid item>
-                <Box p={1}>
-                  <Typography variant="body1">
-                    {message.content}
+            <Grid container
+                  sx={message.sender.id === userId ? {
+                      flexDirection: 'row-reverse',
+                      padding: '10px',
+
+
+                    }
+                    :
+                    {
+                      flexDirection: 'row',
+                      padding: '10px',
+
+
+                    }}
+                  key={message.id}>
+              {/*<Grid item>*/}
+              {/*  <UserAvatar variantBadge={currentUser.online.status ? 'dot' : 'standard'}*/}
+              {/*              src={currentUser.avatar} name={`${currentUser.first_name} ${currentUser.last_name}`}/>*/}
+              {/*</Grid>*/}
+              <Grid item
+                    display={'flex'}
+                    direction={'row'}
+                // style={{
+                //   backgroundColor: message.sender.id === userId ? '#267FDB' : '#FFF',
+                //   borderRadius: message.sender.id === userId ? '16px 16px 4px 16px' : '16px 16px 16px 4px',
+                //   padding: '5px',
+                //   color: message.sender.id === userId ? '#FFF' : '#000',
+                // }}
+                    style={{
+                      maxWidth: '470px',
+                      display: 'inline-flex',
+                      backgroundColor: message.sender.id === userId ? '#267FDB' : '#FFF',
+                      borderRadius: message.sender.id === userId ? '16px 16px 4px 16px' : '16px 16px 16px 4px',
+                      color: message.sender.id === userId ? '#FFF' : '#000',
+                      padding: '8px 16px 6px 16px',
+                      marginLeft: message.sender.id === userId ? '20px' : '0',
+                      marginRight: message.sender.id === userId ? '0' : '20px',
+                      alignItems: 'flex-end',
+                      gap: '10px',
+                    }}
+              >
+                <Typography
+                  //   style={{
+                  //   backgroundColor: message.sender.id === userId ? '#267FDB' : '#FFF',
+                  //   borderRadius: message.sender.id === userId ? '16px 16px 4px 16px' : '16px 16px 16px 4px',
+                  //   padding: '5px',
+                  //   color: message.sender.id === userId ? '#FFF' : '#000',
+                  // }}
+                  variant="body1"
+                  textAlign={'start'}
+                >
+                  {message.content}
+                </Typography>
+                <Box style={{
+                  display: 'flex',
+                  paddingTop: '8px',
+                  alignItems: 'flex-end',
+                  gap: '10px'
+                }}>
+                  <Typography style={{}}
+                              variant="body2"
+                              textAlign={'right'}
+                  >
+                    {message.time}
                   </Typography>
                 </Box>
               </Grid>

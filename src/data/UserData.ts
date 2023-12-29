@@ -3,7 +3,6 @@ type ISender = {
   first_name: string,
   last_name: string,
   avatar: string,
-  online: boolean
 }
 
 type IMessage = {
@@ -64,7 +63,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:30:00Z",
         date: "26 декабря 2023",
@@ -79,11 +78,10 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
         },
         timestamp: "2023-12-26T12:35:00Z",
         date: "26 декабря 2023",
-        time: "12:35",
+        time: "12:32",
         content: "Привет! У меня все отлично, спасибо!",
         direction: "incoming"
       },
@@ -94,11 +92,10 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
         },
         timestamp: "2023-12-26T12:40:00Z",
         date: "26 декабря 2023",
-        time: "12:40",
+        time: "12:35",
         content: "Что нового?",
         direction: "incoming"
       },
@@ -109,12 +106,11 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
         },
         timestamp: "2023-12-26T12:45:00Z",
         date: "26 декабря 2023",
         time: "12:45",
-        content: "Ничего особенного, работа и так далее. Как у тебя?",
+        content: "Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов. Используется он веб- дизайнерами для вставки на интернет-страницы",
         direction: "incoming"
       }
     ]
@@ -179,7 +175,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:30:00Z",
         date: "26 декабря 2023",
@@ -194,7 +190,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:35:00Z",
         date: "26 декабря 2023",
@@ -209,7 +205,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:40:00Z",
         date: "26 декабря 2023",
@@ -224,7 +220,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:45:00Z",
         date: "26 декабря 2023",
@@ -255,7 +251,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:30:00Z",
         date: "26 декабря 2023",
@@ -270,7 +266,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:35:00Z",
         date: "26 декабря 2023",
@@ -285,7 +281,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:40:00Z",
         date: "26 декабря 2023",
@@ -300,7 +296,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:45:00Z",
         date: "26 декабря 2023",
@@ -331,7 +327,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:30:00Z",
         date: "26 декабря 2023",
@@ -346,7 +342,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:35:00Z",
         date: "26 декабря 2023",
@@ -361,7 +357,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:40:00Z",
         date: "26 декабря 2023",
@@ -376,7 +372,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:45:00Z",
         date: "26 декабря 2023",
@@ -407,7 +403,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:30:00Z",
         date: "26 декабря 2023",
@@ -422,7 +418,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:35:00Z",
         date: "26 декабря 2023",
@@ -437,7 +433,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:40:00Z",
         date: "26 декабря 2023",
@@ -452,7 +448,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:45:00Z",
         date: "26 декабря 2023",
@@ -483,7 +479,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:30:00Z",
         date: "26 декабря 2023",
@@ -498,7 +494,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:35:00Z",
         date: "26 декабря 2023",
@@ -513,7 +509,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:40:00Z",
         date: "26 декабря 2023",
@@ -528,7 +524,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:45:00Z",
         date: "26 декабря 2023",
@@ -559,7 +555,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:30:00Z",
         date: "26 декабря 2023",
@@ -574,7 +570,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:35:00Z",
         date: "26 декабря 2023",
@@ -589,7 +585,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:40:00Z",
         date: "26 декабря 2023",
@@ -604,7 +600,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:45:00Z",
         date: "26 декабря 2023",
@@ -635,7 +631,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:30:00Z",
         date: "26 декабря 2023",
@@ -650,7 +646,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:35:00Z",
         date: "26 декабря 2023",
@@ -665,7 +661,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:40:00Z",
         date: "26 декабря 2023",
@@ -680,7 +676,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:45:00Z",
         date: "26 декабря 2023",
@@ -711,7 +707,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:30:00Z",
         date: "26 декабря 2023",
@@ -726,7 +722,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:35:00Z",
         date: "26 декабря 2023",
@@ -741,7 +737,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:40:00Z",
         date: "26 декабря 2023",
@@ -756,7 +752,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:45:00Z",
         date: "26 декабря 2023",
@@ -787,7 +783,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:30:00Z",
         date: "26 декабря 2023",
@@ -802,7 +798,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:35:00Z",
         date: "26 декабря 2023",
@@ -817,7 +813,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:40:00Z",
         date: "26 декабря 2023",
@@ -832,7 +828,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:45:00Z",
         date: "26 декабря 2023",
@@ -863,7 +859,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:30:00Z",
         date: "26 декабря 2023",
@@ -878,7 +874,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:35:00Z",
         date: "26 декабря 2023",
@@ -893,7 +889,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:40:00Z",
         date: "26 декабря 2023",
@@ -908,7 +904,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:45:00Z",
         date: "26 декабря 2023",
@@ -939,7 +935,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:30:00Z",
         date: "26 декабря 2023",
@@ -954,7 +950,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:35:00Z",
         date: "26 декабря 2023",
@@ -969,7 +965,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:40:00Z",
         date: "26 декабря 2023",
@@ -984,7 +980,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:45:00Z",
         date: "26 декабря 2023",
@@ -1015,7 +1011,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:30:00Z",
         date: "26 декабря 2023",
@@ -1030,7 +1026,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:35:00Z",
         date: "26 декабря 2023",
@@ -1045,7 +1041,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:40:00Z",
         date: "26 декабря 2023",
@@ -1060,7 +1056,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:45:00Z",
         date: "26 декабря 2023",
@@ -1091,7 +1087,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:30:00Z",
         date: "26 декабря 2023",
@@ -1106,7 +1102,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:35:00Z",
         date: "26 декабря 2023",
@@ -1121,7 +1117,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:40:00Z",
         date: "26 декабря 2023",
@@ -1136,7 +1132,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:45:00Z",
         date: "26 декабря 2023",
@@ -1167,7 +1163,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:30:00Z",
         date: "26 декабря 2023",
@@ -1182,7 +1178,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:35:00Z",
         date: "26 декабря 2023",
@@ -1197,7 +1193,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:40:00Z",
         date: "26 декабря 2023",
@@ -1212,7 +1208,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:45:00Z",
         date: "26 декабря 2023",
@@ -1243,7 +1239,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:30:00Z",
         date: "26 декабря 2023",
@@ -1258,7 +1254,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:35:00Z",
         date: "26 декабря 2023",
@@ -1273,7 +1269,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:40:00Z",
         date: "26 декабря 2023",
@@ -1288,7 +1284,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:45:00Z",
         date: "26 декабря 2023",
@@ -1319,7 +1315,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:30:00Z",
         date: "26 декабря 2023",
@@ -1334,7 +1330,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:35:00Z",
         date: "26 декабря 2023",
@@ -1349,7 +1345,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:40:00Z",
         date: "26 декабря 2023",
@@ -1364,7 +1360,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:45:00Z",
         date: "26 декабря 2023",
@@ -1395,7 +1391,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:30:00Z",
         date: "26 декабря 2023",
@@ -1410,7 +1406,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:35:00Z",
         date: "26 декабря 2023",
@@ -1425,7 +1421,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:40:00Z",
         date: "26 декабря 2023",
@@ -1440,7 +1436,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:45:00Z",
         date: "26 декабря 2023",
@@ -1471,7 +1467,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:30:00Z",
         date: "26 декабря 2023",
@@ -1486,7 +1482,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:35:00Z",
         date: "26 декабря 2023",
@@ -1501,7 +1497,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:40:00Z",
         date: "26 декабря 2023",
@@ -1516,7 +1512,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:45:00Z",
         date: "26 декабря 2023",
@@ -1547,7 +1543,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:30:00Z",
         date: "26 декабря 2023",
@@ -1562,7 +1558,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:35:00Z",
         date: "26 декабря 2023",
@@ -1577,7 +1573,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:40:00Z",
         date: "26 декабря 2023",
@@ -1592,7 +1588,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:45:00Z",
         date: "26 декабря 2023",
@@ -1623,7 +1619,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:30:00Z",
         date: "26 декабря 2023",
@@ -1638,7 +1634,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:35:00Z",
         date: "26 декабря 2023",
@@ -1653,7 +1649,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:40:00Z",
         date: "26 декабря 2023",
@@ -1668,7 +1664,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:45:00Z",
         date: "26 декабря 2023",
@@ -1699,7 +1695,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:30:00Z",
         date: "26 декабря 2023",
@@ -1714,7 +1710,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:35:00Z",
         date: "26 декабря 2023",
@@ -1729,7 +1725,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:40:00Z",
         date: "26 декабря 2023",
@@ -1744,7 +1740,7 @@ export const userData: IUser[] = [
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-          online: true
+
         },
         timestamp: "2023-12-26T12:45:00Z",
         date: "26 декабря 2023",
