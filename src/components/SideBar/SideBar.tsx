@@ -1,4 +1,4 @@
-import React, {FC, useState} from 'react';
+import React, {FC} from 'react';
 import {Badge, BadgeProps, Box, IconButton, Stack, Typography} from "@mui/material";
 import Options from "../Options/Options";
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
@@ -6,7 +6,8 @@ import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrow
 import {CSSObject, styled, Theme} from "@mui/material/styles";
 import MuiDrawer from "@mui/material/Drawer";
 import UserAvatar from "../Avatar/UserAvatar";
-import './User-Title_color_white.css'
+import {observer} from "mobx-react-lite";
+import Sidebar from "../../store/Sidebar";
 
 
 const drawerWidth = 247;
@@ -24,8 +25,8 @@ interface IUser {
 
 const user: IUser = {
   id: 1,
-  firstName: 'Alex',
-  secondName: 'Spirin',
+  firstName: 'Алексей',
+  secondName: 'Спирин',
   avatar: {
     src: 'https://www.epicdope.com/wp-content/uploads/2023/04/Saitama.jpg'
   },
@@ -95,42 +96,44 @@ const StyledBadge = styled(Badge)<BadgeProps>(({theme}) => ({
   },
 }));
 
-const SideBar: FC = () => {
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false)
+const SideBar: FC = observer(() => {
+  // const [isDrawerOpen, setIsDrawerOpen] = useState(false)
 
 
   return (
     <Box height={'100vh'}>
-      <Drawer variant="permanent" open={isDrawerOpen} onClose={() => setIsDrawerOpen(false)
-      }>
-        <DrawerHeader sx={{padding: isDrawerOpen ? '40px' : '8px'}}>
+      <Drawer variant="permanent" open={Sidebar.visible} onClose={() => Sidebar.closed()}
+      >
+        <DrawerHeader sx={{padding: Sidebar.visible ? '40px' : '8px'}}>
           <UserAvatar
-            sx={{width: !isDrawerOpen ? 48 : 100, height: !isDrawerOpen ? 48 : 100, border: '2px solid white'}}
+            sx={{width: !Sidebar.visible ? 48 : 100, height: !Sidebar.visible ? 48 : 100, border: '2px solid white'}}
             name={`${user.firstName} ${user.secondName}`}
             src={`${user.avatar.src}`}
           />
-          <Typography sx={{display: isDrawerOpen ? 'inline-block' : 'none', color: '#fff'}} className={'User-Title_color_white'}
+          <Typography sx={{display: Sidebar.visible ? 'inline-block' : 'none', color: '#fff'}}
+                      fontSize={'18px'}
+                      className={'User-Title_color_white'}
                       variant={"h4"}>{`${user.firstName} ${user.secondName}`}
           </Typography>
-          <Stack sx={{display: isDrawerOpen ? 'flex' : 'none',}} spacing={1}  direction={'row'} alignItems={'center'}>
+          <Stack sx={{display: Sidebar.visible ? 'flex' : 'none',}} spacing={1} direction={'row'} alignItems={'center'}>
             <StyledBadge anchorOrigin={{
               vertical: 'top',
               horizontal: 'left',
             }}
                          variant={'dot'}
-                         sx={{display: isDrawerOpen ? 'inline-block' : 'none',}}>
+                         sx={{display: Sidebar.visible ? 'inline-block' : 'none',}}>
             </StyledBadge>
-            <Typography sx={{opacity: isDrawerOpen ? 1 : 0, color: '#fff'}}
+            <Typography sx={{opacity: Sidebar.visible ? 1 : 0, color: '#fff'}}
                         variant={'subtitle1'}>{user.online ? 'Online' : 'Offline'}
             </Typography>
           </Stack>
         </DrawerHeader>
         <Stack height={'100%'} marginBottom={2} justifyContent={'space-between'}>
-          <Options open={isDrawerOpen}/>
+          <Options open={Sidebar.visible}/>
           <Stack direction={'row'} justifyContent={'center'}>
             {/*<Avatar variant={"square"} sx={{width: '80%'}}>*/}
             <IconButton sx={{
-              width: !isDrawerOpen ? '40px' : '80%',
+              width: !Sidebar.visible ? '40px' : '80%',
               height: '30px',
               borderRadius: '4px',
               color: '#2680D9',
@@ -138,8 +141,8 @@ const SideBar: FC = () => {
               '&:hover': {
                 backgroundColor: 'rgba(0, 0, 0, 0.25)'
               }
-            }} size={'large'} onClick={() => setIsDrawerOpen(!isDrawerOpen)}>
-              {!isDrawerOpen ? <KeyboardDoubleArrowRightIcon fontSize={"large"}/> :
+            }} size={'large'} onClick={() => Sidebar.visible ? Sidebar.closed() : Sidebar.opened()}>
+              {!Sidebar.visible ? <KeyboardDoubleArrowRightIcon fontSize={"large"}/> :
                 <KeyboardDoubleArrowLeftIcon fontSize={"large"}/>}
             </IconButton>
             {/*</Avatar>*/}
@@ -148,6 +151,6 @@ const SideBar: FC = () => {
       </Drawer>
     </Box>
   );
-};
+});
 
 export default SideBar;

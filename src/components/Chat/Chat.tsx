@@ -2,15 +2,18 @@ import React, {FC} from 'react';
 import {Box, Grid, Input, Stack, Typography} from "@mui/material";
 import Divider from "@mui/material/Divider";
 import {userData} from "../../data/UserData";
+import userChat from '../../store/UserChat'
+import {observer} from "mobx-react-lite";
 
 
-interface ChatProps {
-  userId: number;
-}
+// interface ChatProps {
+//   userId: number;
+// }
 
-const Chat: FC<ChatProps> = ({userId}) => {
+const Chat: FC = observer( () => {
 
-  const currentUser = userData.find(user => user.id === userId);
+  const currentUser = userData.find(user => user.id === userChat.userChatId);
+
 
   if (!currentUser) {
     return null; // Если пользователя не найдено, выходим из компонента
@@ -63,7 +66,7 @@ const Chat: FC<ChatProps> = ({userId}) => {
         <Box display={'grid'}>
           {currentUser.messages.map((message) => (
             <Grid container
-                  sx={message.sender.id === userId ? {
+                  sx={message.sender.id === currentUser.id ? {
                       flexDirection: 'row-reverse',
                       padding: '10px',
 
@@ -93,12 +96,12 @@ const Chat: FC<ChatProps> = ({userId}) => {
                     style={{
                       maxWidth: '470px',
                       display: 'inline-flex',
-                      backgroundColor: message.sender.id === userId ? '#267FDB' : '#FFF',
-                      borderRadius: message.sender.id === userId ? '16px 16px 4px 16px' : '16px 16px 16px 4px',
-                      color: message.sender.id === userId ? '#FFF' : '#000',
+                      backgroundColor: message.sender.id === currentUser.id ? '#267FDB' : '#FFF',
+                      borderRadius: message.sender.id === currentUser.id ? '16px 16px 4px 16px' : '16px 16px 16px 4px',
+                      color: message.sender.id === currentUser.id ? '#FFF' : '#000',
                       padding: '8px 16px 6px 16px',
-                      marginLeft: message.sender.id === userId ? '20px' : '0',
-                      marginRight: message.sender.id === userId ? '0' : '20px',
+                      marginLeft: message.sender.id === currentUser.id ? '20px' : '0',
+                      marginRight: message.sender.id === currentUser.id ? '0' : '20px',
                       alignItems: 'flex-end',
                       gap: '10px',
                     }}
@@ -152,6 +155,6 @@ const Chat: FC<ChatProps> = ({userId}) => {
       </Stack>
     </Grid>
   );
-};
+});
 
 export default Chat;

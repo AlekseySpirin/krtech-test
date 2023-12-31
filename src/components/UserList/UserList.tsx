@@ -15,6 +15,7 @@ import UserAvatar from "../Avatar/UserAvatar";
 import {userData} from "../../data/UserData"
 import {styled} from '@mui/material/styles';
 import Divider from "@mui/material/Divider";
+import UserChat from "../../store/UserChat";
 
 const StyledBadge = styled(Badge)<BadgeProps>(({theme}) => ({
   '& .MuiBadge-badge': {
@@ -34,6 +35,7 @@ const UserList: FC = () => {
     user.first_name.toLowerCase().includes(filterValue.toLowerCase()) ||
     user.last_name.toLowerCase().includes(filterValue.toLowerCase())
   );
+
 
   return (
     <Box height={'92%'} width={'100%'}>
@@ -94,7 +96,7 @@ const UserList: FC = () => {
         scrollbarColor: '#11447580 transparent', // Цвет полосы и фона скролла (для Firefox)
       }}>
         {filteredUsers.map((user, index) => (
-          <ListItem key={user.id} disablePadding>
+          <ListItem key={user.id} disablePadding onClick={(e) => UserChat.openUserChat(user.id)}>
             <ListItemButton
               disableRipple
               sx={{

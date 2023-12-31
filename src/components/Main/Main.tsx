@@ -15,7 +15,7 @@ const Main: FC = () => {
       </Grid>
       <Divider orientation="vertical" flexItem/>
       <Grid container item xs>
-        <Chat userId={1}/>
+        <Chat/>
       </Grid>
     </Grid>
   );
