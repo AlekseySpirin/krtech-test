@@ -10,7 +10,25 @@ import {observer} from "mobx-react-lite";
 //   userId: number;
 // }
 
-const Chat: FC = observer( () => {
+
+const Chat: FC = observer(() => {
+
+  // const [statusMessage, setStatusMessage] = useState("был(а) недавно");
+  // const [isTyping, setIsTyping] = useState(false);
+  //
+  // useEffect(() => {
+  //   const intervalId = setInterval(() => {
+  //     if (isTyping) {
+  //       setStatusMessage("был(а) в сети недавно");
+  //     } else {
+  //       setStatusMessage("Печатает...");
+  //     }
+  //     setIsTyping(!isTyping); // Переключаем между "Печатает..." и "был(а) в сети недавно"
+  //   }, 5000);
+  //
+  //   // Очистка интервала при размонтировании компонента (необходимо для предотвращения утечек памяти)
+  //   return () => clearInterval(intervalId);
+  // }, []);
 
   const currentUser = userData.find(user => user.id === userChat.userChatId);
 
@@ -56,7 +74,7 @@ const Chat: FC = observer( () => {
                       lineHeight: '20px',
                       letterSpacing: '0.4px',
                     }}>
-          {`Печатает...`}
+          Печатает...
         </Typography>
       </Grid>
       <Divider/>

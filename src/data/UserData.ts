@@ -59,7 +59,7 @@ export const userData: IUser[] = [
       {
         id: "message_1",
         sender: {
-          id: 2,
+          id: 3151020,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
@@ -88,7 +88,7 @@ export const userData: IUser[] = [
       {
         id: "message_3",
         sender: {
-          id: 2,
+          id: 3151020,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
@@ -171,7 +171,7 @@ export const userData: IUser[] = [
       {
         id: "message_1",
         sender: {
-          id: 2,
+          id: 3151020,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
@@ -186,7 +186,7 @@ export const userData: IUser[] = [
       {
         id: "message_2",
         sender: {
-          id: 1,
+          id: 4,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
@@ -201,7 +201,7 @@ export const userData: IUser[] = [
       {
         id: "message_3",
         sender: {
-          id: 2,
+          id: 3151020,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
@@ -216,7 +216,7 @@ export const userData: IUser[] = [
       {
         id: "message_4",
         sender: {
-          id: 1,
+          id: 4,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
@@ -247,7 +247,7 @@ export const userData: IUser[] = [
       {
         id: "message_1",
         sender: {
-          id: 2,
+          id: 3151020,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
@@ -262,7 +262,7 @@ export const userData: IUser[] = [
       {
         id: "message_2",
         sender: {
-          id: 1,
+          id: 5,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
@@ -277,7 +277,7 @@ export const userData: IUser[] = [
       {
         id: "message_3",
         sender: {
-          id: 2,
+          id: 3151020,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
@@ -292,7 +292,7 @@ export const userData: IUser[] = [
       {
         id: "message_4",
         sender: {
-          id: 1,
+          id: 5,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
@@ -323,7 +323,7 @@ export const userData: IUser[] = [
       {
         id: "message_1",
         sender: {
-          id: 2,
+          id: 3151020,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
@@ -338,7 +338,7 @@ export const userData: IUser[] = [
       {
         id: "message_2",
         sender: {
-          id: 1,
+          id: 6,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
@@ -353,7 +353,7 @@ export const userData: IUser[] = [
       {
         id: "message_3",
         sender: {
-          id: 2,
+          id: 3151020,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
@@ -368,7 +368,7 @@ export const userData: IUser[] = [
       {
         id: "message_4",
         sender: {
-          id: 1,
+          id: 6,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
@@ -399,7 +399,7 @@ export const userData: IUser[] = [
       {
         id: "message_1",
         sender: {
-          id: 2,
+          id: 3151020,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
@@ -414,7 +414,7 @@ export const userData: IUser[] = [
       {
         id: "message_2",
         sender: {
-          id: 1,
+          id: 7,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
@@ -429,7 +429,7 @@ export const userData: IUser[] = [
       {
         id: "message_3",
         sender: {
-          id: 2,
+          id: 3151020,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
@@ -444,7 +444,7 @@ export const userData: IUser[] = [
       {
         id: "message_4",
         sender: {
-          id: 1,
+          id: 7,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
@@ -475,7 +475,7 @@ export const userData: IUser[] = [
       {
         id: "message_1",
         sender: {
-          id: 2,
+          id: 3151020,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
@@ -490,7 +490,7 @@ export const userData: IUser[] = [
       {
         id: "message_2",
         sender: {
-          id: 1,
+          id: 8,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
@@ -505,7 +505,7 @@ export const userData: IUser[] = [
       {
         id: "message_3",
         sender: {
-          id: 2,
+          id: 3151020,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
@@ -520,7 +520,7 @@ export const userData: IUser[] = [
       {
         id: "message_4",
         sender: {
-          id: 1,
+          id: 8,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
@@ -551,7 +551,7 @@ export const userData: IUser[] = [
       {
         id: "message_1",
         sender: {
-          id: 2,
+          id: 3151020,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
@@ -566,7 +566,7 @@ export const userData: IUser[] = [
       {
         id: "message_2",
         sender: {
-          id: 1,
+          id: 9,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
@@ -581,7 +581,7 @@ export const userData: IUser[] = [
       {
         id: "message_3",
         sender: {
-          id: 2,
+          id: 3151020,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
@@ -596,7 +596,7 @@ export const userData: IUser[] = [
       {
         id: "message_4",
         sender: {
-          id: 1,
+          id: 9,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
@@ -627,7 +627,7 @@ export const userData: IUser[] = [
       {
         id: "message_1",
         sender: {
-          id: 2,
+          id: 3151020,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
@@ -642,7 +642,7 @@ export const userData: IUser[] = [
       {
         id: "message_2",
         sender: {
-          id: 1,
+          id: 10,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
@@ -657,7 +657,7 @@ export const userData: IUser[] = [
       {
         id: "message_3",
         sender: {
-          id: 2,
+          id: 3151020,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
@@ -672,7 +672,7 @@ export const userData: IUser[] = [
       {
         id: "message_4",
         sender: {
-          id: 1,
+          id: 10,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
@@ -703,7 +703,7 @@ export const userData: IUser[] = [
       {
         id: "message_1",
         sender: {
-          id: 2,
+          id: 3151020,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
@@ -718,7 +718,7 @@ export const userData: IUser[] = [
       {
         id: "message_2",
         sender: {
-          id: 1,
+          id: 11,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
@@ -733,7 +733,7 @@ export const userData: IUser[] = [
       {
         id: "message_3",
         sender: {
-          id: 2,
+          id: 3151020,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
@@ -748,7 +748,7 @@ export const userData: IUser[] = [
       {
         id: "message_4",
         sender: {
-          id: 1,
+          id: 11,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
@@ -779,7 +779,7 @@ export const userData: IUser[] = [
       {
         id: "message_1",
         sender: {
-          id: 2,
+          id: 3151020,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
@@ -794,7 +794,7 @@ export const userData: IUser[] = [
       {
         id: "message_2",
         sender: {
-          id: 1,
+          id: 12,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
@@ -809,7 +809,7 @@ export const userData: IUser[] = [
       {
         id: "message_3",
         sender: {
-          id: 2,
+          id: 3151020,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
@@ -824,7 +824,7 @@ export const userData: IUser[] = [
       {
         id: "message_4",
         sender: {
-          id: 1,
+          id: 12,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
@@ -855,7 +855,7 @@ export const userData: IUser[] = [
       {
         id: "message_1",
         sender: {
-          id: 2,
+          id: 3151020,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
@@ -870,7 +870,7 @@ export const userData: IUser[] = [
       {
         id: "message_2",
         sender: {
-          id: 1,
+          id: 13,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
@@ -885,7 +885,7 @@ export const userData: IUser[] = [
       {
         id: "message_3",
         sender: {
-          id: 2,
+          id: 3151020,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
@@ -900,7 +900,7 @@ export const userData: IUser[] = [
       {
         id: "message_4",
         sender: {
-          id: 1,
+          id: 13,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
@@ -931,7 +931,7 @@ export const userData: IUser[] = [
       {
         id: "message_1",
         sender: {
-          id: 2,
+          id: 3151020,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
@@ -946,7 +946,7 @@ export const userData: IUser[] = [
       {
         id: "message_2",
         sender: {
-          id: 1,
+          id: 14,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
@@ -961,7 +961,7 @@ export const userData: IUser[] = [
       {
         id: "message_3",
         sender: {
-          id: 2,
+          id: 3151020,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
@@ -976,7 +976,7 @@ export const userData: IUser[] = [
       {
         id: "message_4",
         sender: {
-          id: 1,
+          id: 14,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
@@ -1007,7 +1007,7 @@ export const userData: IUser[] = [
       {
         id: "message_1",
         sender: {
-          id: 2,
+          id: 3151020,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
@@ -1022,7 +1022,7 @@ export const userData: IUser[] = [
       {
         id: "message_2",
         sender: {
-          id: 1,
+          id: 15,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
@@ -1037,7 +1037,7 @@ export const userData: IUser[] = [
       {
         id: "message_3",
         sender: {
-          id: 2,
+          id: 3151020,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
@@ -1052,7 +1052,7 @@ export const userData: IUser[] = [
       {
         id: "message_4",
         sender: {
-          id: 1,
+          id: 15,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
@@ -1083,7 +1083,7 @@ export const userData: IUser[] = [
       {
         id: "message_1",
         sender: {
-          id: 2,
+          id: 3151020,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
@@ -1098,7 +1098,7 @@ export const userData: IUser[] = [
       {
         id: "message_2",
         sender: {
-          id: 1,
+          id: 16,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
@@ -1113,7 +1113,7 @@ export const userData: IUser[] = [
       {
         id: "message_3",
         sender: {
-          id: 2,
+          id: 3151020,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
@@ -1128,7 +1128,7 @@ export const userData: IUser[] = [
       {
         id: "message_4",
         sender: {
-          id: 1,
+          id: 16,
           first_name: "Averil",
           last_name: "Palfreeman",
           avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
@@ -1142,612 +1142,612 @@ export const userData: IUser[] = [
       }
     ]
   },
-  {
-    id: 17,
-    first_name: "Dilly",
-    last_name: "Jacox",
-    email: "djacoxa@rambler.ru",
-    gender: "Male",
-    ip_address: "109.97.247.107",
-    avatar: "https://robohash.org/natusodionostrum.png?size=50x50&set=set1",
-    online: {
-      status: true,
-      startTime: '11:45',
-      endTime: '12:45'
-    },
-    messages: [
-      {
-        id: "message_1",
-        sender: {
-          id: 2,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:30:00Z",
-        date: "26 декабря 2023",
-        time: "12:30",
-        content: "Привет, как дела?",
-        direction: "incoming"
-      },
-      {
-        id: "message_2",
-        sender: {
-          id: 1,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:35:00Z",
-        date: "26 декабря 2023",
-        time: "12:35",
-        content: "Привет! У меня все отлично, спасибо!",
-        direction: "incoming"
-      },
-      {
-        id: "message_3",
-        sender: {
-          id: 2,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:40:00Z",
-        date: "26 декабря 2023",
-        time: "12:40",
-        content: "Что нового?",
-        direction: "incoming"
-      },
-      {
-        id: "message_4",
-        sender: {
-          id: 1,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:45:00Z",
-        date: "26 декабря 2023",
-        time: "12:45",
-        content: "Ничего особенного, работа и так далее. Как у тебя?",
-        direction: "incoming"
-      }
-    ]
-  },
-  {
-    id: 18,
-    first_name: "Dilly",
-    last_name: "Jacox",
-    email: "djacoxa@rambler.ru",
-    gender: "Male",
-    ip_address: "109.97.247.107",
-    avatar: "https://robohash.org/natusodionostrum.png?size=50x50&set=set1",
-    online: {
-      status: false,
-      startTime: '11:45',
-      endTime: '12:45'
-    },
-    messages: [
-      {
-        id: "message_1",
-        sender: {
-          id: 2,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:30:00Z",
-        date: "26 декабря 2023",
-        time: "12:30",
-        content: "Привет, как дела?",
-        direction: "incoming"
-      },
-      {
-        id: "message_2",
-        sender: {
-          id: 1,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:35:00Z",
-        date: "26 декабря 2023",
-        time: "12:35",
-        content: "Привет! У меня все отлично, спасибо!",
-        direction: "incoming"
-      },
-      {
-        id: "message_3",
-        sender: {
-          id: 2,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:40:00Z",
-        date: "26 декабря 2023",
-        time: "12:40",
-        content: "Что нового?",
-        direction: "incoming"
-      },
-      {
-        id: "message_4",
-        sender: {
-          id: 1,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:45:00Z",
-        date: "26 декабря 2023",
-        time: "12:45",
-        content: "Ничего особенного, работа и так далее. Как у тебя?",
-        direction: "incoming"
-      }
-    ]
-  },
-  {
-    id: 19,
-    first_name: "Dilly",
-    last_name: "Jacox",
-    email: "djacoxa@rambler.ru",
-    gender: "Male",
-    ip_address: "109.97.247.107",
-    avatar: "https://robohash.org/natusodionostrum.png?size=50x50&set=set1",
-    online: {
-      status: true,
-      startTime: '11:45',
-      endTime: '12:45'
-    },
-    messages: [
-      {
-        id: "message_1",
-        sender: {
-          id: 2,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:30:00Z",
-        date: "26 декабря 2023",
-        time: "12:30",
-        content: "Привет, как дела?",
-        direction: "incoming"
-      },
-      {
-        id: "message_2",
-        sender: {
-          id: 1,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:35:00Z",
-        date: "26 декабря 2023",
-        time: "12:35",
-        content: "Привет! У меня все отлично, спасибо!",
-        direction: "incoming"
-      },
-      {
-        id: "message_3",
-        sender: {
-          id: 2,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:40:00Z",
-        date: "26 декабря 2023",
-        time: "12:40",
-        content: "Что нового?",
-        direction: "incoming"
-      },
-      {
-        id: "message_4",
-        sender: {
-          id: 1,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:45:00Z",
-        date: "26 декабря 2023",
-        time: "12:45",
-        content: "Ничего особенного, работа и так далее. Как у тебя?",
-        direction: "incoming"
-      }
-    ]
-  },
-  {
-    id: 20,
-    first_name: "Dilly",
-    last_name: "Jacox",
-    email: "djacoxa@rambler.ru",
-    gender: "Male",
-    ip_address: "109.97.247.107",
-    avatar: "https://robohash.org/natusodionostrum.png?size=50x50&set=set1",
-    online: {
-      status: true,
-      startTime: '11:45',
-      endTime: '12:45'
-    },
-    messages: [
-      {
-        id: "message_1",
-        sender: {
-          id: 2,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:30:00Z",
-        date: "26 декабря 2023",
-        time: "12:30",
-        content: "Привет, как дела?",
-        direction: "incoming"
-      },
-      {
-        id: "message_2",
-        sender: {
-          id: 1,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:35:00Z",
-        date: "26 декабря 2023",
-        time: "12:35",
-        content: "Привет! У меня все отлично, спасибо!",
-        direction: "incoming"
-      },
-      {
-        id: "message_3",
-        sender: {
-          id: 2,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:40:00Z",
-        date: "26 декабря 2023",
-        time: "12:40",
-        content: "Что нового?",
-        direction: "incoming"
-      },
-      {
-        id: "message_4",
-        sender: {
-          id: 1,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:45:00Z",
-        date: "26 декабря 2023",
-        time: "12:45",
-        content: "Ничего особенного, работа и так далее. Как у тебя?",
-        direction: "incoming"
-      }
-    ]
-  },
-  {
-    id: 21,
-    first_name: "Dilly",
-    last_name: "Jacox",
-    email: "djacoxa@rambler.ru",
-    gender: "Male",
-    ip_address: "109.97.247.107",
-    avatar: "https://robohash.org/natusodionostrum.png?size=50x50&set=set1",
-    online: {
-      status: true,
-      startTime: '11:45',
-      endTime: '12:45'
-    },
-    messages: [
-      {
-        id: "message_1",
-        sender: {
-          id: 2,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:30:00Z",
-        date: "26 декабря 2023",
-        time: "12:30",
-        content: "Привет, как дела?",
-        direction: "incoming"
-      },
-      {
-        id: "message_2",
-        sender: {
-          id: 1,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:35:00Z",
-        date: "26 декабря 2023",
-        time: "12:35",
-        content: "Привет! У меня все отлично, спасибо!",
-        direction: "incoming"
-      },
-      {
-        id: "message_3",
-        sender: {
-          id: 2,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:40:00Z",
-        date: "26 декабря 2023",
-        time: "12:40",
-        content: "Что нового?",
-        direction: "incoming"
-      },
-      {
-        id: "message_4",
-        sender: {
-          id: 1,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:45:00Z",
-        date: "26 декабря 2023",
-        time: "12:45",
-        content: "Ничего особенного, работа и так далее. Как у тебя?",
-        direction: "incoming"
-      }
-    ]
-  },
-  {
-    id: 22,
-    first_name: "Dilly",
-    last_name: "Jacox",
-    email: "djacoxa@rambler.ru",
-    gender: "Male",
-    ip_address: "109.97.247.107",
-    avatar: "https://robohash.org/natusodionostrum.png?size=50x50&set=set1",
-    online: {
-      status: false,
-      startTime: '11:45',
-      endTime: '12:45'
-    },
-    messages: [
-      {
-        id: "message_1",
-        sender: {
-          id: 2,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:30:00Z",
-        date: "26 декабря 2023",
-        time: "12:30",
-        content: "Привет, как дела?",
-        direction: "incoming"
-      },
-      {
-        id: "message_2",
-        sender: {
-          id: 1,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:35:00Z",
-        date: "26 декабря 2023",
-        time: "12:35",
-        content: "Привет! У меня все отлично, спасибо!",
-        direction: "incoming"
-      },
-      {
-        id: "message_3",
-        sender: {
-          id: 2,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:40:00Z",
-        date: "26 декабря 2023",
-        time: "12:40",
-        content: "Что нового?",
-        direction: "incoming"
-      },
-      {
-        id: "message_4",
-        sender: {
-          id: 1,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:45:00Z",
-        date: "26 декабря 2023",
-        time: "12:45",
-        content: "Ничего особенного, работа и так далее. Как у тебя?",
-        direction: "incoming"
-      }
-    ]
-  },
-  {
-    id: 23,
-    first_name: "Dilly",
-    last_name: "Jacox",
-    email: "djacoxa@rambler.ru",
-    gender: "Male",
-    ip_address: "109.97.247.107",
-    avatar: "https://robohash.org/natusodionostrum.png?size=50x50&set=set1",
-    online: {
-      status: false,
-      startTime: '11:45',
-      endTime: '12:45'
-    },
-    messages: [
-      {
-        id: "message_1",
-        sender: {
-          id: 2,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:30:00Z",
-        date: "26 декабря 2023",
-        time: "12:30",
-        content: "Привет, как дела?",
-        direction: "incoming"
-      },
-      {
-        id: "message_2",
-        sender: {
-          id: 1,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:35:00Z",
-        date: "26 декабря 2023",
-        time: "12:35",
-        content: "Привет! У меня все отлично, спасибо!",
-        direction: "incoming"
-      },
-      {
-        id: "message_3",
-        sender: {
-          id: 2,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:40:00Z",
-        date: "26 декабря 2023",
-        time: "12:40",
-        content: "Что нового?",
-        direction: "incoming"
-      },
-      {
-        id: "message_4",
-        sender: {
-          id: 1,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:45:00Z",
-        date: "26 декабря 2023",
-        time: "12:45",
-        content: "Ничего особенного, работа и так далее. Как у тебя?",
-        direction: "incoming"
-      }
-    ]
-  },
-  {
-    id: 24,
-    first_name: "Dilly",
-    last_name: "Jacox",
-    email: "djacoxa@rambler.ru",
-    gender: "Male",
-    ip_address: "109.97.247.107",
-    avatar: "https://robohash.org/natusodionostrum.png?size=50x50&set=set1",
-    online: {
-      status: true,
-      startTime: '11:45',
-      endTime: '12:45'
-    },
-    messages: [
-      {
-        id: "message_1",
-        sender: {
-          id: 2,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:30:00Z",
-        date: "26 декабря 2023",
-        time: "12:30",
-        content: "Привет, как дела?",
-        direction: "incoming"
-      },
-      {
-        id: "message_2",
-        sender: {
-          id: 1,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:35:00Z",
-        date: "26 декабря 2023",
-        time: "12:35",
-        content: "Привет! У меня все отлично, спасибо!",
-        direction: "incoming"
-      },
-      {
-        id: "message_3",
-        sender: {
-          id: 2,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:40:00Z",
-        date: "26 декабря 2023",
-        time: "12:40",
-        content: "Что нового?",
-        direction: "incoming"
-      },
-      {
-        id: "message_4",
-        sender: {
-          id: 1,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:45:00Z",
-        date: "26 декабря 2023",
-        time: "12:45",
-        content: "Ничего особенного, работа и так далее. Как у тебя?",
-        direction: "incoming"
-      }
-    ]
-  }
+  // {
+  //   id: 17,
+  //   first_name: "Dilly",
+  //   last_name: "Jacox",
+  //   email: "djacoxa@rambler.ru",
+  //   gender: "Male",
+  //   ip_address: "109.97.247.107",
+  //   avatar: "https://robohash.org/natusodionostrum.png?size=50x50&set=set1",
+  //   online: {
+  //     status: true,
+  //     startTime: '11:45',
+  //     endTime: '12:45'
+  //   },
+  //   messages: [
+  //     {
+  //       id: "message_1",
+  //       sender: {
+  //         id: 3151020,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:30:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:30",
+  //       content: "Привет, как дела?",
+  //       direction: "incoming"
+  //     },
+  //     {
+  //       id: "message_2",
+  //       sender: {
+  //         id: 1,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:35:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:35",
+  //       content: "Привет! У меня все отлично, спасибо!",
+  //       direction: "incoming"
+  //     },
+  //     {
+  //       id: "message_3",
+  //       sender: {
+  //         id: 3151020,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:40:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:40",
+  //       content: "Что нового?",
+  //       direction: "incoming"
+  //     },
+  //     {
+  //       id: "message_4",
+  //       sender: {
+  //         id: 1,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:45:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:45",
+  //       content: "Ничего особенного, работа и так далее. Как у тебя?",
+  //       direction: "incoming"
+  //     }
+  //   ]
+  // },
+  // {
+  //   id: 18,
+  //   first_name: "Dilly",
+  //   last_name: "Jacox",
+  //   email: "djacoxa@rambler.ru",
+  //   gender: "Male",
+  //   ip_address: "109.97.247.107",
+  //   avatar: "https://robohash.org/natusodionostrum.png?size=50x50&set=set1",
+  //   online: {
+  //     status: false,
+  //     startTime: '11:45',
+  //     endTime: '12:45'
+  //   },
+  //   messages: [
+  //     {
+  //       id: "message_1",
+  //       sender: {
+  //         id: 3151020,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:30:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:30",
+  //       content: "Привет, как дела?",
+  //       direction: "incoming"
+  //     },
+  //     {
+  //       id: "message_2",
+  //       sender: {
+  //         id: 1,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:35:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:35",
+  //       content: "Привет! У меня все отлично, спасибо!",
+  //       direction: "incoming"
+  //     },
+  //     {
+  //       id: "message_3",
+  //       sender: {
+  //         id: 3151020,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:40:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:40",
+  //       content: "Что нового?",
+  //       direction: "incoming"
+  //     },
+  //     {
+  //       id: "message_4",
+  //       sender: {
+  //         id: 1,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:45:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:45",
+  //       content: "Ничего особенного, работа и так далее. Как у тебя?",
+  //       direction: "incoming"
+  //     }
+  //   ]
+  // },
+  // {
+  //   id: 19,
+  //   first_name: "Dilly",
+  //   last_name: "Jacox",
+  //   email: "djacoxa@rambler.ru",
+  //   gender: "Male",
+  //   ip_address: "109.97.247.107",
+  //   avatar: "https://robohash.org/natusodionostrum.png?size=50x50&set=set1",
+  //   online: {
+  //     status: true,
+  //     startTime: '11:45',
+  //     endTime: '12:45'
+  //   },
+  //   messages: [
+  //     {
+  //       id: "message_1",
+  //       sender: {
+  //         id: 3151020,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:30:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:30",
+  //       content: "Привет, как дела?",
+  //       direction: "incoming"
+  //     },
+  //     {
+  //       id: "message_2",
+  //       sender: {
+  //         id: 1,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:35:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:35",
+  //       content: "Привет! У меня все отлично, спасибо!",
+  //       direction: "incoming"
+  //     },
+  //     {
+  //       id: "message_3",
+  //       sender: {
+  //         id: 3151020,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:40:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:40",
+  //       content: "Что нового?",
+  //       direction: "incoming"
+  //     },
+  //     {
+  //       id: "message_4",
+  //       sender: {
+  //         id: 1,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:45:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:45",
+  //       content: "Ничего особенного, работа и так далее. Как у тебя?",
+  //       direction: "incoming"
+  //     }
+  //   ]
+  // },
+  // {
+  //   id: 20,
+  //   first_name: "Dilly",
+  //   last_name: "Jacox",
+  //   email: "djacoxa@rambler.ru",
+  //   gender: "Male",
+  //   ip_address: "109.97.247.107",
+  //   avatar: "https://robohash.org/natusodionostrum.png?size=50x50&set=set1",
+  //   online: {
+  //     status: true,
+  //     startTime: '11:45',
+  //     endTime: '12:45'
+  //   },
+  //   messages: [
+  //     {
+  //       id: "message_1",
+  //       sender: {
+  //         id: 3151020,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:30:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:30",
+  //       content: "Привет, как дела?",
+  //       direction: "incoming"
+  //     },
+  //     {
+  //       id: "message_2",
+  //       sender: {
+  //         id: 1,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:35:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:35",
+  //       content: "Привет! У меня все отлично, спасибо!",
+  //       direction: "incoming"
+  //     },
+  //     {
+  //       id: "message_3",
+  //       sender: {
+  //         id: 3151020,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:40:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:40",
+  //       content: "Что нового?",
+  //       direction: "incoming"
+  //     },
+  //     {
+  //       id: "message_4",
+  //       sender: {
+  //         id: 1,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:45:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:45",
+  //       content: "Ничего особенного, работа и так далее. Как у тебя?",
+  //       direction: "incoming"
+  //     }
+  //   ]
+  // },
+  // {
+  //   id: 21,
+  //   first_name: "Dilly",
+  //   last_name: "Jacox",
+  //   email: "djacoxa@rambler.ru",
+  //   gender: "Male",
+  //   ip_address: "109.97.247.107",
+  //   avatar: "https://robohash.org/natusodionostrum.png?size=50x50&set=set1",
+  //   online: {
+  //     status: true,
+  //     startTime: '11:45',
+  //     endTime: '12:45'
+  //   },
+  //   messages: [
+  //     {
+  //       id: "message_1",
+  //       sender: {
+  //         id: 3151020,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:30:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:30",
+  //       content: "Привет, как дела?",
+  //       direction: "incoming"
+  //     },
+  //     {
+  //       id: "message_2",
+  //       sender: {
+  //         id: 1,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:35:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:35",
+  //       content: "Привет! У меня все отлично, спасибо!",
+  //       direction: "incoming"
+  //     },
+  //     {
+  //       id: "message_3",
+  //       sender: {
+  //         id: 3151020,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:40:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:40",
+  //       content: "Что нового?",
+  //       direction: "incoming"
+  //     },
+  //     {
+  //       id: "message_4",
+  //       sender: {
+  //         id: 1,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:45:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:45",
+  //       content: "Ничего особенного, работа и так далее. Как у тебя?",
+  //       direction: "incoming"
+  //     }
+  //   ]
+  // },
+  // {
+  //   id: 22,
+  //   first_name: "Dilly",
+  //   last_name: "Jacox",
+  //   email: "djacoxa@rambler.ru",
+  //   gender: "Male",
+  //   ip_address: "109.97.247.107",
+  //   avatar: "https://robohash.org/natusodionostrum.png?size=50x50&set=set1",
+  //   online: {
+  //     status: false,
+  //     startTime: '11:45',
+  //     endTime: '12:45'
+  //   },
+  //   messages: [
+  //     {
+  //       id: "message_1",
+  //       sender: {
+  //         id: 3151020,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:30:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:30",
+  //       content: "Привет, как дела?",
+  //       direction: "incoming"
+  //     },
+  //     {
+  //       id: "message_2",
+  //       sender: {
+  //         id: 1,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:35:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:35",
+  //       content: "Привет! У меня все отлично, спасибо!",
+  //       direction: "incoming"
+  //     },
+  //     {
+  //       id: "message_3",
+  //       sender: {
+  //         id: 3151020,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:40:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:40",
+  //       content: "Что нового?",
+  //       direction: "incoming"
+  //     },
+  //     {
+  //       id: "message_4",
+  //       sender: {
+  //         id: 1,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:45:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:45",
+  //       content: "Ничего особенного, работа и так далее. Как у тебя?",
+  //       direction: "incoming"
+  //     }
+  //   ]
+  // },
+  // {
+  //   id: 23,
+  //   first_name: "Dilly",
+  //   last_name: "Jacox",
+  //   email: "djacoxa@rambler.ru",
+  //   gender: "Male",
+  //   ip_address: "109.97.247.107",
+  //   avatar: "https://robohash.org/natusodionostrum.png?size=50x50&set=set1",
+  //   online: {
+  //     status: false,
+  //     startTime: '11:45',
+  //     endTime: '12:45'
+  //   },
+  //   messages: [
+  //     {
+  //       id: "message_1",
+  //       sender: {
+  //         id: 3151020,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:30:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:30",
+  //       content: "Привет, как дела?",
+  //       direction: "incoming"
+  //     },
+  //     {
+  //       id: "message_2",
+  //       sender: {
+  //         id: 1,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:35:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:35",
+  //       content: "Привет! У меня все отлично, спасибо!",
+  //       direction: "incoming"
+  //     },
+  //     {
+  //       id: "message_3",
+  //       sender: {
+  //         id: 3151020,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:40:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:40",
+  //       content: "Что нового?",
+  //       direction: "incoming"
+  //     },
+  //     {
+  //       id: "message_4",
+  //       sender: {
+  //         id: 1,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:45:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:45",
+  //       content: "Ничего особенного, работа и так далее. Как у тебя?",
+  //       direction: "incoming"
+  //     }
+  //   ]
+  // },
+  // {
+  //   id: 24,
+  //   first_name: "Dilly",
+  //   last_name: "Jacox",
+  //   email: "djacoxa@rambler.ru",
+  //   gender: "Male",
+  //   ip_address: "109.97.247.107",
+  //   avatar: "https://robohash.org/natusodionostrum.png?size=50x50&set=set1",
+  //   online: {
+  //     status: true,
+  //     startTime: '11:45',
+  //     endTime: '12:45'
+  //   },
+  //   messages: [
+  //     {
+  //       id: "message_1",
+  //       sender: {
+  //         id: 3151020,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:30:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:30",
+  //       content: "Привет, как дела?",
+  //       direction: "incoming"
+  //     },
+  //     {
+  //       id: "message_2",
+  //       sender: {
+  //         id: 1,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:35:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:35",
+  //       content: "Привет! У меня все отлично, спасибо!",
+  //       direction: "incoming"
+  //     },
+  //     {
+  //       id: "message_3",
+  //       sender: {
+  //         id: 3151020,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:40:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:40",
+  //       content: "Что нового?",
+  //       direction: "incoming"
+  //     },
+  //     {
+  //       id: "message_4",
+  //       sender: {
+  //         id: 1,
+  //         first_name: "Averil",
+  //         last_name: "Palfreeman",
+  //         avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
+  //
+  //       },
+  //       timestamp: "2023-12-26T12:45:00Z",
+  //       date: "26 декабря 2023",
+  //       time: "12:45",
+  //       content: "Ничего особенного, работа и так далее. Как у тебя?",
+  //       direction: "incoming"
+  //     }
+  //   ]
+  // }
 ]
