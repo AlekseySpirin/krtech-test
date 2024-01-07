@@ -1,9 +1,9 @@
 import React, {FC} from 'react';
 import {Box, Grid, Input, Stack, Typography} from "@mui/material";
 import Divider from "@mui/material/Divider";
-import {userData} from "../../data/UserData";
 import userChat from '../../store/UserChat'
 import {observer} from "mobx-react-lite";
+import UserStore from "../../store/UserStore";
 
 
 // interface ChatProps {
@@ -30,7 +30,7 @@ const Chat: FC = observer(() => {
   //   return () => clearInterval(intervalId);
   // }, []);
 
-  const currentUser = userData.find(user => user.id === userChat.userChatId);
+  const currentUser = UserStore.users.find(user => user.id === userChat.userChatId);
 
 
   if (!currentUser) {
@@ -74,7 +74,7 @@ const Chat: FC = observer(() => {
                       lineHeight: '20px',
                       letterSpacing: '0.4px',
                     }}>
-          Печатает...
+          {currentUser.isTyping ? 'Печатает...' : 'был(а) недавно' }
         </Typography>
       </Grid>
       <Divider/>

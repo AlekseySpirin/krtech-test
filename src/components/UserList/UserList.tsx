@@ -1,4 +1,4 @@
-import React, {FC, useState} from 'react';
+import React, {FC, useEffect, useState} from 'react';
 import {
   Badge,
   BadgeProps,
@@ -12,10 +12,14 @@ import {
   Stack,
 } from "@mui/material";
 import UserAvatar from "../Avatar/UserAvatar";
-import {userData} from "../../data/UserData"
+// import {userData} from "../../data/UserData"
 import {styled} from '@mui/material/styles';
 import Divider from "@mui/material/Divider";
 import UserChat from "../../store/UserChat";
+import userStore from "../../store/UserStore";
+import {observer} from "mobx-react-lite";
+import UserStore from "../../store/UserStore";
+import {simulateUserActivity} from "../../utils/simulateUserActivity";
 
 const StyledBadge = styled(Badge)<BadgeProps>(({theme}) => ({
   '& .MuiBadge-badge': {
@@ -28,13 +32,46 @@ const StyledBadge = styled(Badge)<BadgeProps>(({theme}) => ({
   },
 }));
 
-const UserList: FC = () => {
+const UserList: FC = observer(() => {
   const [filterValue, setFilterValue] = useState<string>('');
 
-  const filteredUsers = userData.filter(user =>
+  const filteredUsers = userStore.users.filter(user =>
     user.first_name.toLowerCase().includes(filterValue.toLowerCase()) ||
     user.last_name.toLowerCase().includes(filterValue.toLowerCase())
   );
+
+  // const [typingTimeout, setTypingTimeout] = useState<NodeJS.Timeout | null>(null);
+  //
+  // const handleTyping = (userId: number, isTyping: boolean) => {
+  //   userStore.setTypingStatus(userId, isTyping);
+  //
+  //   if (isTyping) {
+  //     // Очистить предыдущий таймер, если есть
+  //     if (typingTimeout) {
+  //       clearTimeout(typingTimeout);
+  //     }
+  //
+  //     // Установить новый таймер для симуляции "Печать..." в течение 5 секунд
+  //     const newTimeout = setTimeout(() => {
+  //       userStore.incrementUnreadMessages(userId);
+  //       setTypingTimeout(null);
+  //     }, 5000);
+  //
+  //     setTypingTimeout(newTimeout);
+  //   } else {
+  //     // Если прекратили печать раньше, чем через 5 секунд, сбросить таймер
+  //     if (typingTimeout) {
+  //       clearTimeout(typingTimeout);
+  //       setTypingTimeout(null);
+  //     }
+  //   }
+  // };
+
+
+
+  useEffect(() => {
+    simulateUserActivity();
+  }, []);
 
 
   return (
@@ -80,8 +117,14 @@ const UserList: FC = () => {
           <ListItem sx={{width: '100%'}}
                     key={user.id}
                     disablePadding
-                    onClick={() => UserChat.openUserChat(user.id)}>
+
+          >
             <ListItemButton
+              onClick={() => {
+                UserChat.openUserChat(user.id)
+                UserStore.resetUnreadMessages(user.id)
+              }
+              }
               disableRipple
               sx={{
                 width: '100%',
@@ -108,7 +151,7 @@ const UserList: FC = () => {
                 primary={`${user.first_name} ${user.last_name}`}
                 secondary={
                   user.messages.length > 0
-                    ? user.messages[user.messages.length - 1].content
+                    ? (user.isTyping ? 'Печатает...' : user.messages[user.messages.length - 1].content)
                     : `${user.first_name} ${user.last_name} теперь в CrimeaChat`
                 }
               />
@@ -129,7 +172,7 @@ const UserList: FC = () => {
                   lineHeight: 'normal',
                   letterSpacing: '0.4px',
                 }}
-                secondary={<StyledBadge badgeContent={user.messages.length}
+                secondary={<StyledBadge badgeContent={user.unreadMessages}
                                         color={'primary'}
                                         max={999}
                 />}
@@ -147,6 +190,6 @@ const UserList: FC = () => {
     //     </ul>
     // </div>
   );
-};
+});
 
 export default UserList;

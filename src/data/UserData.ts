@@ -32,6 +32,9 @@ type IUser = {
     startTime: string;
     endTime: string;
   };
+  isTyping: boolean;
+  wasTyping: boolean;
+  unreadMessages: number;
   messages: IMessage[]
 
 };
@@ -55,6 +58,9 @@ export const userData: IUser[] = [
       startTime: '11:45',
       endTime: '12:45'
     },
+    isTyping: false,
+    wasTyping: false,
+    unreadMessages: 0,
     messages: [
       {
         id: "message_1",
@@ -133,6 +139,8 @@ export const userData: IUser[] = [
       startTime: '11:45',
       endTime: '12:45'
     },
+    isTyping: false,
+    unreadMessages: 0, wasTyping: false,
     messages: []
   },
   {
@@ -152,6 +160,8 @@ export const userData: IUser[] = [
       startTime: '11:45',
       endTime: '12:45'
     },
+    isTyping: false,
+    unreadMessages: 0, wasTyping: false,
     messages: []
   },
   {
@@ -167,6 +177,8 @@ export const userData: IUser[] = [
       startTime: '11:45',
       endTime: '12:45'
     },
+    isTyping: false,
+    unreadMessages: 0, wasTyping: false,
     messages: [
       {
         id: "message_1",
@@ -243,6 +255,8 @@ export const userData: IUser[] = [
       startTime: '11:45',
       endTime: '12:45'
     },
+    isTyping: false,
+    unreadMessages: 0, wasTyping: false,
     messages: [
       {
         id: "message_1",
@@ -319,6 +333,8 @@ export const userData: IUser[] = [
       startTime: '11:45',
       endTime: '12:45'
     },
+    isTyping: false,
+    unreadMessages: 0, wasTyping: false,
     messages: [
       {
         id: "message_1",
@@ -395,6 +411,8 @@ export const userData: IUser[] = [
       startTime: '11:45',
       endTime: '12:45'
     },
+    isTyping: false,
+    unreadMessages: 0, wasTyping: false,
     messages: [
       {
         id: "message_1",
@@ -471,6 +489,8 @@ export const userData: IUser[] = [
       startTime: '11:45',
       endTime: '12:45'
     },
+    isTyping: false,
+    unreadMessages: 0, wasTyping: false,
     messages: [
       {
         id: "message_1",
@@ -547,6 +567,8 @@ export const userData: IUser[] = [
       startTime: '11:45',
       endTime: '12:45'
     },
+    isTyping: false,
+    unreadMessages: 0, wasTyping: false,
     messages: [
       {
         id: "message_1",
@@ -623,6 +645,8 @@ export const userData: IUser[] = [
       startTime: '11:45',
       endTime: '12:45'
     },
+    isTyping: false,
+    unreadMessages: 0, wasTyping: false,
     messages: [
       {
         id: "message_1",
@@ -699,6 +723,8 @@ export const userData: IUser[] = [
       startTime: '11:45',
       endTime: '12:45'
     },
+    isTyping: false,
+    unreadMessages: 0, wasTyping: false,
     messages: [
       {
         id: "message_1",
@@ -775,6 +801,8 @@ export const userData: IUser[] = [
       startTime: '11:45',
       endTime: '12:45'
     },
+    isTyping: false,
+    unreadMessages: 0, wasTyping: false,
     messages: [
       {
         id: "message_1",
@@ -851,6 +879,8 @@ export const userData: IUser[] = [
       startTime: '11:45',
       endTime: '12:45'
     },
+    isTyping: false,
+    unreadMessages: 0, wasTyping: false,
     messages: [
       {
         id: "message_1",
@@ -927,6 +957,8 @@ export const userData: IUser[] = [
       startTime: '11:45',
       endTime: '12:45'
     },
+    isTyping: false,
+    unreadMessages: 0, wasTyping: false,
     messages: [
       {
         id: "message_1",
@@ -1003,6 +1035,8 @@ export const userData: IUser[] = [
       startTime: '11:45',
       endTime: '12:45'
     },
+    isTyping: false,
+    unreadMessages: 0, wasTyping: false,
     messages: [
       {
         id: "message_1",
@@ -1079,6 +1113,8 @@ export const userData: IUser[] = [
       startTime: '11:45',
       endTime: '12:45'
     },
+    isTyping: false,
+    unreadMessages: 0, wasTyping: false,
     messages: [
       {
         id: "message_1",

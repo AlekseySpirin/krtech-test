@@ -3,7 +3,8 @@ import {Badge, Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText} 
 import SettingsIcon from '@mui/icons-material/Settings';
 import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 import {ReactJSXElement} from "@emotion/react/types/jsx-namespace";
-import {userData} from "../../data/UserData";
+import UserStore from "../../store/UserStore";
+import {observer} from "mobx-react-lite";
 
 
 interface IOption {
@@ -17,10 +18,10 @@ interface OptionsProps {
 }
 
 
-const Options: FC<OptionsProps> = ({open}) => {
+const Options: FC<OptionsProps> = observer (({open}) => {
 
-  const totalMessage = userData.reduce((sum, user) => {
-    return sum + (user.messages.length > 0 ? 1 : 0);
+  const totalMessage = UserStore.users.reduce((sum, user) => {
+    return sum + (user.unreadMessages ? 1 : 0);
   }, 0);
 
   const optionList: IOption[] = [
@@ -112,6 +113,6 @@ const Options: FC<OptionsProps> = ({open}) => {
       </List>
     </Box>
   );
-};
+});
 
 export default Options;
