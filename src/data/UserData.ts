@@ -1,8 +1,10 @@
+import {myId} from "../utils/constants";
+
 type ISender = {
-  id: number,
-  first_name: string,
-  last_name: string,
-  avatar: string,
+  id: number
+  // first_name: string,
+  // last_name: string,
+  // avatar: string,
 }
 
 type IMessage = {
@@ -12,7 +14,7 @@ type IMessage = {
   date: string,
   time: string,
   content: string,
-  direction: string
+  // direction: string
 }
 
 type IUser = {
@@ -39,6 +41,144 @@ type IUser = {
 
 };
 
+const messageList:IMessage[] = [
+  {
+    id: "message_1",
+    sender: {
+      id: 1,
+    },
+    timestamp: "2023-12-26T12:30:00Z",
+    date: "26 декабря 2023",
+    time: "12:30",
+    content: "Привет, как дела?",
+  },
+  {
+    id: "message_2",
+    sender: {
+      id: myId,
+    },
+    timestamp: "2023-12-26T12:35:00Z",
+    date: "26 декабря 2023",
+    time: "12:32",
+    content: "Привет! У меня все отлично, спасибо!",
+
+  },
+  {
+    id: "message_3",
+    sender: {
+      id: 1,
+    },
+    timestamp: "2023-12-26T12:40:00Z",
+    date: "26 декабря 2023",
+    time: "12:35",
+    content: "Что нового?",
+
+  },
+  {
+    id: "message_4",
+    sender: {
+      id: myId,
+    },
+    timestamp: "2023-12-26T12:45:00Z",
+    date: "26 декабря 2023",
+    time: "12:45",
+    content: "Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов. Используется он веб- дизайнерами для вставки на интернет-страницы",
+
+  },
+
+  {
+    id: "message_5",
+    sender: {
+      id: 1,
+
+    },
+    timestamp: "2023-12-26T12:30:00Z",
+    date: "26 декабря 2023",
+    time: "12:30",
+    content: "Привет, как дела?",
+
+  },
+  {
+    id: "message_6",
+    sender: {
+      id: myId,
+    },
+    timestamp: "2023-12-26T12:35:00Z",
+    date: "26 декабря 2023",
+    time: "12:32",
+    content: "Привет! У меня все отлично, спасибо!",
+
+  },
+  {
+    id: "message_7",
+    sender: {
+      id: 1,
+    },
+    timestamp: "2023-12-26T12:40:00Z",
+    date: "26 декабря 2023",
+    time: "12:35",
+    content: "Что нового?",
+
+  },
+  {
+    id: "message_8",
+    sender: {
+      id: myId,
+    },
+    timestamp: "2023-12-26T12:45:00Z",
+    date: "26 декабря 2023",
+    time: "12:45",
+    content: "Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов. Используется он веб- дизайнерами для вставки на интернет-страницы",
+
+  },
+
+  {
+    id: "message_9",
+    sender: {
+      id: 1,
+
+    },
+    timestamp: "2023-12-26T12:30:00Z",
+    date: "26 декабря 2023",
+    time: "12:30",
+    content: "Привет, как дела?",
+
+  },
+  {
+    id: "message_10",
+    sender: {
+      id: myId,
+    },
+    timestamp: "2023-12-26T12:35:00Z",
+    date: "26 декабря 2023",
+    time: "12:32",
+    content: "Привет! У меня все отлично, спасибо!",
+
+  },
+  {
+    id: "message_11",
+    sender: {
+      id: 1,
+    },
+    timestamp: "2023-12-26T12:40:00Z",
+    date: "26 декабря 2023",
+    time: "12:35",
+    content: "Что нового?",
+
+  },
+  {
+    id: "message_12",
+    sender: {
+      id: myId,
+    },
+    timestamp: "2023-12-26T12:45:00Z",
+    date: "26 декабря 2023",
+    time: "12:45",
+    content: "Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов. Используется он веб- дизайнерами для вставки на интернет-страницы",
+
+  }
+]
+
 
 export const userData: IUser[] = [
   {
@@ -61,65 +201,7 @@ export const userData: IUser[] = [
     isTyping: false,
     wasTyping: false,
     unreadMessages: 0,
-    messages: [
-      {
-        id: "message_1",
-        sender: {
-          id: 3151020,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:30:00Z",
-        date: "26 декабря 2023",
-        time: "12:30",
-        content: "Привет, как дела?",
-        direction: "incoming"
-      },
-      {
-        id: "message_2",
-        sender: {
-          id: 1,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-        },
-        timestamp: "2023-12-26T12:35:00Z",
-        date: "26 декабря 2023",
-        time: "12:32",
-        content: "Привет! У меня все отлично, спасибо!",
-        direction: "incoming"
-      },
-      {
-        id: "message_3",
-        sender: {
-          id: 3151020,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-        },
-        timestamp: "2023-12-26T12:40:00Z",
-        date: "26 декабря 2023",
-        time: "12:35",
-        content: "Что нового?",
-        direction: "incoming"
-      },
-      {
-        id: "message_4",
-        sender: {
-          id: 1,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-        },
-        timestamp: "2023-12-26T12:45:00Z",
-        date: "26 декабря 2023",
-        time: "12:45",
-        content: "Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов. Используется он веб- дизайнерами для вставки на интернет-страницы",
-        direction: "incoming"
-      }
-    ]
+    messages: messageList
 
   },
   {
@@ -179,68 +261,7 @@ export const userData: IUser[] = [
     },
     isTyping: false,
     unreadMessages: 0, wasTyping: false,
-    messages: [
-      {
-        id: "message_1",
-        sender: {
-          id: 3151020,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:30:00Z",
-        date: "26 декабря 2023",
-        time: "12:30",
-        content: "Привет, как дела?",
-        direction: "incoming"
-      },
-      {
-        id: "message_2",
-        sender: {
-          id: 4,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:35:00Z",
-        date: "26 декабря 2023",
-        time: "12:35",
-        content: "Привет! У меня все отлично, спасибо!",
-        direction: "incoming"
-      },
-      {
-        id: "message_3",
-        sender: {
-          id: 3151020,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:40:00Z",
-        date: "26 декабря 2023",
-        time: "12:40",
-        content: "Что нового?",
-        direction: "incoming"
-      },
-      {
-        id: "message_4",
-        sender: {
-          id: 4,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:45:00Z",
-        date: "26 декабря 2023",
-        time: "12:45",
-        content: "Ничего особенного, работа и так далее. Как у тебя?",
-        direction: "incoming"
-      }
-    ]
+    messages: messageList
   },
   {
     id: 5,
@@ -257,68 +278,7 @@ export const userData: IUser[] = [
     },
     isTyping: false,
     unreadMessages: 0, wasTyping: false,
-    messages: [
-      {
-        id: "message_1",
-        sender: {
-          id: 3151020,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:30:00Z",
-        date: "26 декабря 2023",
-        time: "12:30",
-        content: "Привет, как дела?",
-        direction: "incoming"
-      },
-      {
-        id: "message_2",
-        sender: {
-          id: 5,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:35:00Z",
-        date: "26 декабря 2023",
-        time: "12:35",
-        content: "Привет! У меня все отлично, спасибо!",
-        direction: "incoming"
-      },
-      {
-        id: "message_3",
-        sender: {
-          id: 3151020,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:40:00Z",
-        date: "26 декабря 2023",
-        time: "12:40",
-        content: "Что нового?",
-        direction: "incoming"
-      },
-      {
-        id: "message_4",
-        sender: {
-          id: 5,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:45:00Z",
-        date: "26 декабря 2023",
-        time: "12:45",
-        content: "Ничего особенного, работа и так далее. Как у тебя?",
-        direction: "incoming"
-      }
-    ]
+    messages: messageList
   },
   {
     id: 6,
@@ -335,68 +295,7 @@ export const userData: IUser[] = [
     },
     isTyping: false,
     unreadMessages: 0, wasTyping: false,
-    messages: [
-      {
-        id: "message_1",
-        sender: {
-          id: 3151020,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:30:00Z",
-        date: "26 декабря 2023",
-        time: "12:30",
-        content: "Привет, как дела?",
-        direction: "incoming"
-      },
-      {
-        id: "message_2",
-        sender: {
-          id: 6,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:35:00Z",
-        date: "26 декабря 2023",
-        time: "12:35",
-        content: "Привет! У меня все отлично, спасибо!",
-        direction: "incoming"
-      },
-      {
-        id: "message_3",
-        sender: {
-          id: 3151020,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:40:00Z",
-        date: "26 декабря 2023",
-        time: "12:40",
-        content: "Что нового?",
-        direction: "incoming"
-      },
-      {
-        id: "message_4",
-        sender: {
-          id: 6,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:45:00Z",
-        date: "26 декабря 2023",
-        time: "12:45",
-        content: "Ничего особенного, работа и так далее. Как у тебя?",
-        direction: "incoming"
-      }
-    ]
+    messages: messageList
   },
   {
     id: 7,
@@ -413,68 +312,7 @@ export const userData: IUser[] = [
     },
     isTyping: false,
     unreadMessages: 0, wasTyping: false,
-    messages: [
-      {
-        id: "message_1",
-        sender: {
-          id: 3151020,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:30:00Z",
-        date: "26 декабря 2023",
-        time: "12:30",
-        content: "Привет, как дела?",
-        direction: "incoming"
-      },
-      {
-        id: "message_2",
-        sender: {
-          id: 7,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:35:00Z",
-        date: "26 декабря 2023",
-        time: "12:35",
-        content: "Привет! У меня все отлично, спасибо!",
-        direction: "incoming"
-      },
-      {
-        id: "message_3",
-        sender: {
-          id: 3151020,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:40:00Z",
-        date: "26 декабря 2023",
-        time: "12:40",
-        content: "Что нового?",
-        direction: "incoming"
-      },
-      {
-        id: "message_4",
-        sender: {
-          id: 7,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:45:00Z",
-        date: "26 декабря 2023",
-        time: "12:45",
-        content: "Ничего особенного, работа и так далее. Как у тебя?",
-        direction: "incoming"
-      }
-    ]
+    messages: messageList
   },
   {
     id: 8,
@@ -491,68 +329,7 @@ export const userData: IUser[] = [
     },
     isTyping: false,
     unreadMessages: 0, wasTyping: false,
-    messages: [
-      {
-        id: "message_1",
-        sender: {
-          id: 3151020,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:30:00Z",
-        date: "26 декабря 2023",
-        time: "12:30",
-        content: "Привет, как дела?",
-        direction: "incoming"
-      },
-      {
-        id: "message_2",
-        sender: {
-          id: 8,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:35:00Z",
-        date: "26 декабря 2023",
-        time: "12:35",
-        content: "Привет! У меня все отлично, спасибо!",
-        direction: "incoming"
-      },
-      {
-        id: "message_3",
-        sender: {
-          id: 3151020,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:40:00Z",
-        date: "26 декабря 2023",
-        time: "12:40",
-        content: "Что нового?",
-        direction: "incoming"
-      },
-      {
-        id: "message_4",
-        sender: {
-          id: 8,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:45:00Z",
-        date: "26 декабря 2023",
-        time: "12:45",
-        content: "Ничего особенного, работа и так далее. Как у тебя?",
-        direction: "incoming"
-      }
-    ]
+    messages: messageList
   },
   {
     id: 9,
@@ -569,68 +346,7 @@ export const userData: IUser[] = [
     },
     isTyping: false,
     unreadMessages: 0, wasTyping: false,
-    messages: [
-      {
-        id: "message_1",
-        sender: {
-          id: 3151020,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:30:00Z",
-        date: "26 декабря 2023",
-        time: "12:30",
-        content: "Привет, как дела?",
-        direction: "incoming"
-      },
-      {
-        id: "message_2",
-        sender: {
-          id: 9,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:35:00Z",
-        date: "26 декабря 2023",
-        time: "12:35",
-        content: "Привет! У меня все отлично, спасибо!",
-        direction: "incoming"
-      },
-      {
-        id: "message_3",
-        sender: {
-          id: 3151020,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:40:00Z",
-        date: "26 декабря 2023",
-        time: "12:40",
-        content: "Что нового?",
-        direction: "incoming"
-      },
-      {
-        id: "message_4",
-        sender: {
-          id: 9,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:45:00Z",
-        date: "26 декабря 2023",
-        time: "12:45",
-        content: "Ничего особенного, работа и так далее. Как у тебя?",
-        direction: "incoming"
-      }
-    ]
+    messages: messageList
   },
   {
     id: 10,
@@ -647,68 +363,7 @@ export const userData: IUser[] = [
     },
     isTyping: false,
     unreadMessages: 0, wasTyping: false,
-    messages: [
-      {
-        id: "message_1",
-        sender: {
-          id: 3151020,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:30:00Z",
-        date: "26 декабря 2023",
-        time: "12:30",
-        content: "Привет, как дела?",
-        direction: "incoming"
-      },
-      {
-        id: "message_2",
-        sender: {
-          id: 10,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:35:00Z",
-        date: "26 декабря 2023",
-        time: "12:35",
-        content: "Привет! У меня все отлично, спасибо!",
-        direction: "incoming"
-      },
-      {
-        id: "message_3",
-        sender: {
-          id: 3151020,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:40:00Z",
-        date: "26 декабря 2023",
-        time: "12:40",
-        content: "Что нового?",
-        direction: "incoming"
-      },
-      {
-        id: "message_4",
-        sender: {
-          id: 10,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:45:00Z",
-        date: "26 декабря 2023",
-        time: "12:45",
-        content: "Ничего особенного, работа и так далее. Как у тебя?",
-        direction: "incoming"
-      }
-    ]
+    messages: messageList
   },
   {
     id: 11,
@@ -725,68 +380,7 @@ export const userData: IUser[] = [
     },
     isTyping: false,
     unreadMessages: 0, wasTyping: false,
-    messages: [
-      {
-        id: "message_1",
-        sender: {
-          id: 3151020,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:30:00Z",
-        date: "26 декабря 2023",
-        time: "12:30",
-        content: "Привет, как дела?",
-        direction: "incoming"
-      },
-      {
-        id: "message_2",
-        sender: {
-          id: 11,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:35:00Z",
-        date: "26 декабря 2023",
-        time: "12:35",
-        content: "Привет! У меня все отлично, спасибо!",
-        direction: "incoming"
-      },
-      {
-        id: "message_3",
-        sender: {
-          id: 3151020,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:40:00Z",
-        date: "26 декабря 2023",
-        time: "12:40",
-        content: "Что нового?",
-        direction: "incoming"
-      },
-      {
-        id: "message_4",
-        sender: {
-          id: 11,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:45:00Z",
-        date: "26 декабря 2023",
-        time: "12:45",
-        content: "Ничего особенного, работа и так далее. Как у тебя?",
-        direction: "incoming"
-      }
-    ]
+    messages: messageList
   },
   {
     id: 12,
@@ -803,68 +397,7 @@ export const userData: IUser[] = [
     },
     isTyping: false,
     unreadMessages: 0, wasTyping: false,
-    messages: [
-      {
-        id: "message_1",
-        sender: {
-          id: 3151020,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:30:00Z",
-        date: "26 декабря 2023",
-        time: "12:30",
-        content: "Привет, как дела?",
-        direction: "incoming"
-      },
-      {
-        id: "message_2",
-        sender: {
-          id: 12,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:35:00Z",
-        date: "26 декабря 2023",
-        time: "12:35",
-        content: "Привет! У меня все отлично, спасибо!",
-        direction: "incoming"
-      },
-      {
-        id: "message_3",
-        sender: {
-          id: 3151020,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:40:00Z",
-        date: "26 декабря 2023",
-        time: "12:40",
-        content: "Что нового?",
-        direction: "incoming"
-      },
-      {
-        id: "message_4",
-        sender: {
-          id: 12,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:45:00Z",
-        date: "26 декабря 2023",
-        time: "12:45",
-        content: "Ничего особенного, работа и так далее. Как у тебя?",
-        direction: "incoming"
-      }
-    ]
+    messages: messageList
   },
   {
     id: 13,
@@ -881,68 +414,7 @@ export const userData: IUser[] = [
     },
     isTyping: false,
     unreadMessages: 0, wasTyping: false,
-    messages: [
-      {
-        id: "message_1",
-        sender: {
-          id: 3151020,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:30:00Z",
-        date: "26 декабря 2023",
-        time: "12:30",
-        content: "Привет, как дела?",
-        direction: "incoming"
-      },
-      {
-        id: "message_2",
-        sender: {
-          id: 13,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:35:00Z",
-        date: "26 декабря 2023",
-        time: "12:35",
-        content: "Привет! У меня все отлично, спасибо!",
-        direction: "incoming"
-      },
-      {
-        id: "message_3",
-        sender: {
-          id: 3151020,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:40:00Z",
-        date: "26 декабря 2023",
-        time: "12:40",
-        content: "Что нового?",
-        direction: "incoming"
-      },
-      {
-        id: "message_4",
-        sender: {
-          id: 13,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:45:00Z",
-        date: "26 декабря 2023",
-        time: "12:45",
-        content: "Ничего особенного, работа и так далее. Как у тебя?",
-        direction: "incoming"
-      }
-    ]
+    messages: messageList
   },
   {
     id: 14,
@@ -959,68 +431,7 @@ export const userData: IUser[] = [
     },
     isTyping: false,
     unreadMessages: 0, wasTyping: false,
-    messages: [
-      {
-        id: "message_1",
-        sender: {
-          id: 3151020,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:30:00Z",
-        date: "26 декабря 2023",
-        time: "12:30",
-        content: "Привет, как дела?",
-        direction: "incoming"
-      },
-      {
-        id: "message_2",
-        sender: {
-          id: 14,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:35:00Z",
-        date: "26 декабря 2023",
-        time: "12:35",
-        content: "Привет! У меня все отлично, спасибо!",
-        direction: "incoming"
-      },
-      {
-        id: "message_3",
-        sender: {
-          id: 3151020,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:40:00Z",
-        date: "26 декабря 2023",
-        time: "12:40",
-        content: "Что нового?",
-        direction: "incoming"
-      },
-      {
-        id: "message_4",
-        sender: {
-          id: 14,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:45:00Z",
-        date: "26 декабря 2023",
-        time: "12:45",
-        content: "Ничего особенного, работа и так далее. Как у тебя?",
-        direction: "incoming"
-      }
-    ]
+    messages: messageList
   },
   {
     id: 15,
@@ -1037,146 +448,7 @@ export const userData: IUser[] = [
     },
     isTyping: false,
     unreadMessages: 0, wasTyping: false,
-    messages: [
-      {
-        id: "message_1",
-        sender: {
-          id: 3151020,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:30:00Z",
-        date: "26 декабря 2023",
-        time: "12:30",
-        content: "Привет, как дела?",
-        direction: "incoming"
-      },
-      {
-        id: "message_2",
-        sender: {
-          id: 15,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:35:00Z",
-        date: "26 декабря 2023",
-        time: "12:35",
-        content: "Привет! У меня все отлично, спасибо!",
-        direction: "incoming"
-      },
-      {
-        id: "message_3",
-        sender: {
-          id: 3151020,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:40:00Z",
-        date: "26 декабря 2023",
-        time: "12:40",
-        content: "Что нового?",
-        direction: "incoming"
-      },
-      {
-        id: "message_4",
-        sender: {
-          id: 15,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:45:00Z",
-        date: "26 декабря 2023",
-        time: "12:45",
-        content: "Ничего особенного, работа и так далее. Как у тебя?",
-        direction: "incoming"
-      }
-    ]
-  },
-  {
-    id: 16,
-    first_name: "Dilly",
-    last_name: "Jacox",
-    email: "djacoxa@rambler.ru",
-    gender: "Male",
-    ip_address: "109.97.247.107",
-    avatar: "https://robohash.org/natusodionostrum.png?size=50x50&set=set1",
-    online: {
-      status: true,
-      startTime: '11:45',
-      endTime: '12:45'
-    },
-    isTyping: false,
-    unreadMessages: 0, wasTyping: false,
-    messages: [
-      {
-        id: "message_1",
-        sender: {
-          id: 3151020,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:30:00Z",
-        date: "26 декабря 2023",
-        time: "12:30",
-        content: "Привет, как дела?",
-        direction: "incoming"
-      },
-      {
-        id: "message_2",
-        sender: {
-          id: 16,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:35:00Z",
-        date: "26 декабря 2023",
-        time: "12:35",
-        content: "Привет! У меня все отлично, спасибо!",
-        direction: "incoming"
-      },
-      {
-        id: "message_3",
-        sender: {
-          id: 3151020,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/отправитель.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:40:00Z",
-        date: "26 декабря 2023",
-        time: "12:40",
-        content: "Что нового?",
-        direction: "incoming"
-      },
-      {
-        id: "message_4",
-        sender: {
-          id: 16,
-          first_name: "Averil",
-          last_name: "Palfreeman",
-          avatar: "https://robohash.org/quisenimnon.png?size=50x50&set=set1",
-
-        },
-        timestamp: "2023-12-26T12:45:00Z",
-        date: "26 декабря 2023",
-        time: "12:45",
-        content: "Ничего особенного, работа и так далее. Как у тебя?",
-        direction: "incoming"
-      }
-    ]
+    messages: messageList
   },
   // {
   //   id: 17,
@@ -1205,7 +477,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:30",
   //       content: "Привет, как дела?",
-  //       direction: "incoming"
+  //
   //     },
   //     {
   //       id: "message_2",
@@ -1220,7 +492,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:35",
   //       content: "Привет! У меня все отлично, спасибо!",
-  //       direction: "incoming"
+  //
   //     },
   //     {
   //       id: "message_3",
@@ -1235,7 +507,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:40",
   //       content: "Что нового?",
-  //       direction: "incoming"
+  //
   //     },
   //     {
   //       id: "message_4",
@@ -1250,7 +522,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:45",
   //       content: "Ничего особенного, работа и так далее. Как у тебя?",
-  //       direction: "incoming"
+  //
   //     }
   //   ]
   // },
@@ -1281,7 +553,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:30",
   //       content: "Привет, как дела?",
-  //       direction: "incoming"
+  //
   //     },
   //     {
   //       id: "message_2",
@@ -1296,7 +568,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:35",
   //       content: "Привет! У меня все отлично, спасибо!",
-  //       direction: "incoming"
+  //
   //     },
   //     {
   //       id: "message_3",
@@ -1311,7 +583,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:40",
   //       content: "Что нового?",
-  //       direction: "incoming"
+  //
   //     },
   //     {
   //       id: "message_4",
@@ -1326,7 +598,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:45",
   //       content: "Ничего особенного, работа и так далее. Как у тебя?",
-  //       direction: "incoming"
+  //
   //     }
   //   ]
   // },
@@ -1357,7 +629,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:30",
   //       content: "Привет, как дела?",
-  //       direction: "incoming"
+  //
   //     },
   //     {
   //       id: "message_2",
@@ -1372,7 +644,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:35",
   //       content: "Привет! У меня все отлично, спасибо!",
-  //       direction: "incoming"
+  //
   //     },
   //     {
   //       id: "message_3",
@@ -1387,7 +659,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:40",
   //       content: "Что нового?",
-  //       direction: "incoming"
+  //
   //     },
   //     {
   //       id: "message_4",
@@ -1402,7 +674,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:45",
   //       content: "Ничего особенного, работа и так далее. Как у тебя?",
-  //       direction: "incoming"
+  //
   //     }
   //   ]
   // },
@@ -1433,7 +705,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:30",
   //       content: "Привет, как дела?",
-  //       direction: "incoming"
+  //
   //     },
   //     {
   //       id: "message_2",
@@ -1448,7 +720,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:35",
   //       content: "Привет! У меня все отлично, спасибо!",
-  //       direction: "incoming"
+  //
   //     },
   //     {
   //       id: "message_3",
@@ -1463,7 +735,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:40",
   //       content: "Что нового?",
-  //       direction: "incoming"
+  //
   //     },
   //     {
   //       id: "message_4",
@@ -1478,7 +750,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:45",
   //       content: "Ничего особенного, работа и так далее. Как у тебя?",
-  //       direction: "incoming"
+  //
   //     }
   //   ]
   // },
@@ -1509,7 +781,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:30",
   //       content: "Привет, как дела?",
-  //       direction: "incoming"
+  //
   //     },
   //     {
   //       id: "message_2",
@@ -1524,7 +796,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:35",
   //       content: "Привет! У меня все отлично, спасибо!",
-  //       direction: "incoming"
+  //
   //     },
   //     {
   //       id: "message_3",
@@ -1539,7 +811,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:40",
   //       content: "Что нового?",
-  //       direction: "incoming"
+  //
   //     },
   //     {
   //       id: "message_4",
@@ -1554,7 +826,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:45",
   //       content: "Ничего особенного, работа и так далее. Как у тебя?",
-  //       direction: "incoming"
+  //
   //     }
   //   ]
   // },
@@ -1585,7 +857,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:30",
   //       content: "Привет, как дела?",
-  //       direction: "incoming"
+  //
   //     },
   //     {
   //       id: "message_2",
@@ -1600,7 +872,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:35",
   //       content: "Привет! У меня все отлично, спасибо!",
-  //       direction: "incoming"
+  //
   //     },
   //     {
   //       id: "message_3",
@@ -1615,7 +887,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:40",
   //       content: "Что нового?",
-  //       direction: "incoming"
+  //
   //     },
   //     {
   //       id: "message_4",
@@ -1630,7 +902,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:45",
   //       content: "Ничего особенного, работа и так далее. Как у тебя?",
-  //       direction: "incoming"
+  //
   //     }
   //   ]
   // },
@@ -1661,7 +933,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:30",
   //       content: "Привет, как дела?",
-  //       direction: "incoming"
+  //
   //     },
   //     {
   //       id: "message_2",
@@ -1676,7 +948,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:35",
   //       content: "Привет! У меня все отлично, спасибо!",
-  //       direction: "incoming"
+  //
   //     },
   //     {
   //       id: "message_3",
@@ -1691,7 +963,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:40",
   //       content: "Что нового?",
-  //       direction: "incoming"
+  //
   //     },
   //     {
   //       id: "message_4",
@@ -1706,7 +978,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:45",
   //       content: "Ничего особенного, работа и так далее. Как у тебя?",
-  //       direction: "incoming"
+  //
   //     }
   //   ]
   // },
@@ -1737,7 +1009,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:30",
   //       content: "Привет, как дела?",
-  //       direction: "incoming"
+  //
   //     },
   //     {
   //       id: "message_2",
@@ -1752,7 +1024,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:35",
   //       content: "Привет! У меня все отлично, спасибо!",
-  //       direction: "incoming"
+  //
   //     },
   //     {
   //       id: "message_3",
@@ -1767,7 +1039,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:40",
   //       content: "Что нового?",
-  //       direction: "incoming"
+  //
   //     },
   //     {
   //       id: "message_4",
@@ -1782,7 +1054,7 @@ export const userData: IUser[] = [
   //       date: "26 декабря 2023",
   //       time: "12:45",
   //       content: "Ничего особенного, работа и так далее. Как у тебя?",
-  //       direction: "incoming"
+  //
   //     }
   //   ]
   // }

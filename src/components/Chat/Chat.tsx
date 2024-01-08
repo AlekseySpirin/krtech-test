@@ -1,36 +1,23 @@
-import React, {FC} from 'react';
+import React, {FC, useEffect, useRef} from 'react';
 import {Box, Grid, Input, Stack, Typography} from "@mui/material";
 import Divider from "@mui/material/Divider";
 import userChat from '../../store/UserChat'
 import {observer} from "mobx-react-lite";
 import UserStore from "../../store/UserStore";
-
-
-// interface ChatProps {
-//   userId: number;
-// }
+import {myId} from "../../utils/constants";
 
 
 const Chat: FC = observer(() => {
 
-  // const [statusMessage, setStatusMessage] = useState("был(а) недавно");
-  // const [isTyping, setIsTyping] = useState(false);
-  //
-  // useEffect(() => {
-  //   const intervalId = setInterval(() => {
-  //     if (isTyping) {
-  //       setStatusMessage("был(а) в сети недавно");
-  //     } else {
-  //       setStatusMessage("Печатает...");
-  //     }
-  //     setIsTyping(!isTyping); // Переключаем между "Печатает..." и "был(а) в сети недавно"
-  //   }, 5000);
-  //
-  //   // Очистка интервала при размонтировании компонента (необходимо для предотвращения утечек памяти)
-  //   return () => clearInterval(intervalId);
-  // }, []);
-
   const currentUser = UserStore.users.find(user => user.id === userChat.userChatId);
+  const containerRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    // Прокрутка вниз контейнера при монтировании компонента
+    if (containerRef.current) {
+      containerRef.current.scrollTop = containerRef.current.scrollHeight;
+          }
+  }, [currentUser]);
 
 
   if (!currentUser) {
@@ -74,17 +61,37 @@ const Chat: FC = observer(() => {
                       lineHeight: '20px',
                       letterSpacing: '0.4px',
                     }}>
-          {currentUser.isTyping ? 'Печатает...' : 'был(а) недавно' }
+          {currentUser.isTyping ? 'Печатает...' : 'был(а) недавно'}
         </Typography>
       </Grid>
       <Divider/>
-      <Grid item xs sx={{
-        backgroundColor: '#E7ECF1'
+      <Grid item xs
+            ref={containerRef}
+            sx={{
+        backgroundColor: '#E7ECF1',
+        width: '100%',
+        position: 'relative',
+        overflowY: 'scroll',
+        maxHeight: '100%',
+        '& ul': {padding: 0},
+        scrollbarWidth: 'auto', // Для Firefox
+        '&::-webkit-scrollbar': {
+        width: '8px', // Ширина полосы скролла
+      },
+        '&::-webkit-scrollbar-thumb': {
+        backgroundColor: '#11447580', // Цвет полосы скролла
+        borderRadius: '3px', // Скругление углов полосы скролла
+      },
+        '&::-webkit-scrollbar-track': {
+        backgroundColor: 'background.paper', // Фон трека скролла соответствует фону контейнера
+        borderRadius: '3px', // Скругление углов фона скролла
+      },
+        scrollbarColor: '#11447580 transparent', // Цвет полосы и фона скролла (для Firefox)
       }}>
-        <Box display={'grid'}>
+        <Box display={'grid'} >
           {currentUser.messages.map((message) => (
             <Grid container
-                  sx={message.sender.id === currentUser.id ? {
+                  sx={message.sender.id === myId ? {
                       flexDirection: 'row-reverse',
                       padding: '10px',
 
@@ -98,39 +105,23 @@ const Chat: FC = observer(() => {
 
                     }}
                   key={message.id}>
-              {/*<Grid item>*/}
-              {/*  <UserAvatar variantBadge={currentUser.online.status ? 'dot' : 'standard'}*/}
-              {/*              src={currentUser.avatar} name={`${currentUser.first_name} ${currentUser.last_name}`}/>*/}
-              {/*</Grid>*/}
               <Grid item
                     display={'flex'}
                     direction={'row'}
-                // style={{
-                //   backgroundColor: message.sender.id === userId ? '#267FDB' : '#FFF',
-                //   borderRadius: message.sender.id === userId ? '16px 16px 4px 16px' : '16px 16px 16px 4px',
-                //   padding: '5px',
-                //   color: message.sender.id === userId ? '#FFF' : '#000',
-                // }}
                     style={{
                       maxWidth: '470px',
                       display: 'inline-flex',
-                      backgroundColor: message.sender.id === currentUser.id ? '#267FDB' : '#FFF',
-                      borderRadius: message.sender.id === currentUser.id ? '16px 16px 4px 16px' : '16px 16px 16px 4px',
-                      color: message.sender.id === currentUser.id ? '#FFF' : '#000',
+                      backgroundColor: message.sender.id === myId ? '#267FDB' : '#FFF',
+                      borderRadius: message.sender.id === myId ? '16px 16px 4px 16px' : '16px 16px 16px 4px',
+                      color: message.sender.id === myId ? '#FFF' : '#000',
                       padding: '8px 16px 6px 16px',
-                      marginLeft: message.sender.id === currentUser.id ? '20px' : '0',
-                      marginRight: message.sender.id === currentUser.id ? '0' : '20px',
+                      marginLeft: message.sender.id === myId ? '20px' : '0',
+                      marginRight: message.sender.id === myId ? '0' : '20px',
                       alignItems: 'flex-end',
                       gap: '10px',
                     }}
               >
                 <Typography
-                  //   style={{
-                  //   backgroundColor: message.sender.id === userId ? '#267FDB' : '#FFF',
-                  //   borderRadius: message.sender.id === userId ? '16px 16px 4px 16px' : '16px 16px 16px 4px',
-                  //   padding: '5px',
-                  //   color: message.sender.id === userId ? '#FFF' : '#000',
-                  // }}
                   variant="body1"
                   textAlign={'start'}
                 >
