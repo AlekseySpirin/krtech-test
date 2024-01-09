@@ -1,7 +1,12 @@
 import React, {FC} from 'react';
 import Avatar, {AvatarProps} from '@mui/material/Avatar';
-import {styled} from '@mui/material/styles';
 import Badge from '@mui/material/Badge';
+
+import './UserAvatar.scss'
+import {cn} from "@bem-react/classname";
+
+
+const userAvatar = cn('User', 'Avatar')
 
 interface IUserAvatarProps {
   name: string,
@@ -9,15 +14,9 @@ interface IUserAvatarProps {
 
 }
 
+
 const UserAvatar: FC<IUserAvatarProps & AvatarProps> = ({name, variantBadge, ...props}) => {
 
-  const StyledBadge = styled(Badge)(({theme}) => ({
-    '& .MuiBadge-badge': {
-      backgroundColor: '#44b700',
-      color: '#44b700',
-      boxShadow: `0 0 0 2px ${theme.palette.background.paper}`,
-    },
-  }));
 
   function stringToColor(string: string) {
     let hash = 0;
@@ -49,13 +48,14 @@ const UserAvatar: FC<IUserAvatarProps & AvatarProps> = ({name, variantBadge, ...
   }
 
   return (
-    <StyledBadge
+    <Badge
+      className={userAvatar()}
       overlap="circular"
       anchorOrigin={{vertical: 'bottom', horizontal: 'right'}}
       variant={variantBadge}
     >
       <Avatar {...stringAvatar(name)} alt={'Аватар пользователя'} {...props} />
-    </StyledBadge>
+    </Badge>
 
   );
 };
