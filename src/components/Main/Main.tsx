@@ -1,7 +1,6 @@
 import React, {FC} from 'react';
 import {Grid} from '@mui/material'
-// import MiniDrawer from "../MiniDrawer/MiniDrawer";
-import SideBar from "../SideBar/SideBar";
+import Sidebar from "../Sidebar/Sidebar";
 import UserList from "../UserList/UserList";
 import Chat from "../Chat/Chat";
 import Divider from "@mui/material/Divider";
@@ -9,7 +8,7 @@ import Divider from "@mui/material/Divider";
 const Main: FC = () => {
   return (
     <Grid height={'100vh'} container>
-      <SideBar/>
+      <Sidebar/>
       <Grid height={'100vh'} minWidth={345} item xs={2.5}>
         <UserList/>
       </Grid>

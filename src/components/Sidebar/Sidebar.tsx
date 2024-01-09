@@ -5,9 +5,9 @@ import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArro
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 import {CSSObject, styled, Theme} from "@mui/material/styles";
 import MuiDrawer from "@mui/material/Drawer";
-import UserAvatar from "../Avatar/UserAvatar";
+import UserAvatar from "../UserAvatar/UserAvatar";
 import {observer} from "mobx-react-lite";
-import Sidebar from "../../store/Sidebar";
+import SidebarStore from "../../store/SidebarStore";
 
 
 const drawerWidth = 247;
@@ -96,44 +96,44 @@ const StyledBadge = styled(Badge)<BadgeProps>(({theme}) => ({
   },
 }));
 
-const SideBar: FC = observer(() => {
+const Sidebar: FC = observer(() => {
   // const [isDrawerOpen, setIsDrawerOpen] = useState(false)
 
 
   return (
     <Box height={'100vh'}>
-      <Drawer variant="permanent" open={Sidebar.visible} onClose={() => Sidebar.closed()}
+      <Drawer variant="permanent" open={SidebarStore.visible} onClose={() => SidebarStore.closed()}
       >
-        <DrawerHeader sx={{padding: Sidebar.visible ? '40px' : '8px'}}>
+        <DrawerHeader sx={{padding: SidebarStore.visible ? '40px' : '8px'}}>
           <UserAvatar
-            sx={{width: !Sidebar.visible ? 48 : 100, height: !Sidebar.visible ? 48 : 100, border: '2px solid white'}}
+            sx={{width: !SidebarStore.visible ? 80 : 100, height: !SidebarStore.visible ? 80 : 100, border: '2px solid white'}}
             name={`${user.firstName} ${user.secondName}`}
             src={`${user.avatar.src}`}
           />
-          <Typography sx={{display: Sidebar.visible ? 'inline-block' : 'none', color: '#fff'}}
+          <Typography sx={{display: SidebarStore.visible ? 'inline-block' : 'none', color: '#fff'}}
                       fontSize={'18px'}
                       className={'User-Title_color_white'}
                       variant={"h4"}>{`${user.firstName} ${user.secondName}`}
           </Typography>
-          <Stack sx={{display: Sidebar.visible ? 'flex' : 'none',}} spacing={1} direction={'row'} alignItems={'center'}>
+          <Stack sx={{display: SidebarStore.visible ? 'flex' : 'none',}} spacing={1} direction={'row'} alignItems={'center'}>
             <StyledBadge anchorOrigin={{
               vertical: 'top',
               horizontal: 'left',
             }}
                          variant={'dot'}
-                         sx={{display: Sidebar.visible ? 'inline-block' : 'none',}}>
+                         sx={{display: SidebarStore.visible ? 'inline-block' : 'none',}}>
             </StyledBadge>
-            <Typography sx={{opacity: Sidebar.visible ? 1 : 0, color: '#fff'}}
+            <Typography sx={{opacity: SidebarStore.visible ? 1 : 0, color: '#fff'}}
                         variant={'subtitle1'}>{user.online ? 'Online' : 'Offline'}
             </Typography>
           </Stack>
         </DrawerHeader>
         <Stack height={'100%'} marginBottom={2} justifyContent={'space-between'}>
-          <Options open={Sidebar.visible}/>
+          <Options open={SidebarStore.visible}/>
           <Stack direction={'row'} justifyContent={'center'}>
             {/*<Avatar variant={"square"} sx={{width: '80%'}}>*/}
             <IconButton sx={{
-              width: !Sidebar.visible ? '40px' : '80%',
+              width: !SidebarStore.visible ? '40px' : '80%',
               height: '30px',
               borderRadius: '4px',
               color: '#2680D9',
@@ -141,8 +141,8 @@ const SideBar: FC = observer(() => {
               '&:hover': {
                 backgroundColor: 'rgba(0, 0, 0, 0.25)'
               }
-            }} size={'large'} onClick={() => Sidebar.visible ? Sidebar.closed() : Sidebar.opened()}>
-              {!Sidebar.visible ? <KeyboardDoubleArrowRightIcon fontSize={"large"}/> :
+            }} size={'large'} onClick={() => SidebarStore.visible ? SidebarStore.closed() : SidebarStore.opened()}>
+              {!SidebarStore.visible ? <KeyboardDoubleArrowRightIcon fontSize={"large"}/> :
                 <KeyboardDoubleArrowLeftIcon fontSize={"large"}/>}
             </IconButton>
             {/*</Avatar>*/}
@@ -153,4 +153,4 @@ const SideBar: FC = observer(() => {
   );
 });
 
-export default SideBar;
+export default Sidebar;

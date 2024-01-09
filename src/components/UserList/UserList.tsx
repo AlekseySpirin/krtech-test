@@ -1,7 +1,6 @@
 import React, {FC, useEffect, useState} from 'react';
 import {
   Badge,
-  BadgeProps,
   Box,
   Input,
   List,
@@ -11,26 +10,28 @@ import {
   ListItemText,
   Stack,
 } from "@mui/material";
-import UserAvatar from "../Avatar/UserAvatar";
-// import {userData} from "../../data/UserData"
-import {styled} from '@mui/material/styles';
+import UserAvatar from "../UserAvatar/UserAvatar";
 import Divider from "@mui/material/Divider";
 import UserChat from "../../store/UserChat";
 import userStore from "../../store/UserStore";
-import {observer} from "mobx-react-lite";
 import UserStore from "../../store/UserStore";
+import {observer} from "mobx-react-lite";
 import {simulateUserActivity} from "../../utils/simulateUserActivity";
+import {cn} from "@bem-react/classname";
+import './UserList.scss'
 
-const StyledBadge = styled(Badge)<BadgeProps>(({theme}) => ({
-  '& .MuiBadge-badge': {
+const userList = cn('UserList')
 
-    right: -20,
-    top: 3,
-    border: `1px solid ${theme.palette.background.paper}`,
-    borderRadius: '50%',
-    padding: '12px 9px',
-  },
-}));
+// const StyledBadge = styled(Badge)<BadgeProps>(({theme}) => ({
+//   '& .MuiBadge-badge': {
+//
+//     right: -20,
+//     top: 3,
+//     border: `1px solid ${theme.palette.background.paper}`,
+//     borderRadius: '50%',
+//     padding: '12px 9px',
+//   },
+// }));
 
 const UserList: FC = observer(() => {
   const [filterValue, setFilterValue] = useState<string>('');
@@ -39,35 +40,6 @@ const UserList: FC = observer(() => {
     user.first_name.toLowerCase().includes(filterValue.toLowerCase()) ||
     user.last_name.toLowerCase().includes(filterValue.toLowerCase())
   );
-
-  // const [typingTimeout, setTypingTimeout] = useState<NodeJS.Timeout | null>(null);
-  //
-  // const handleTyping = (userId: number, isTyping: boolean) => {
-  //   userStore.setTypingStatus(userId, isTyping);
-  //
-  //   if (isTyping) {
-  //     // Очистить предыдущий таймер, если есть
-  //     if (typingTimeout) {
-  //       clearTimeout(typingTimeout);
-  //     }
-  //
-  //     // Установить новый таймер для симуляции "Печать..." в течение 5 секунд
-  //     const newTimeout = setTimeout(() => {
-  //       userStore.incrementUnreadMessages(userId);
-  //       setTypingTimeout(null);
-  //     }, 5000);
-  //
-  //     setTypingTimeout(newTimeout);
-  //   } else {
-  //     // Если прекратили печать раньше, чем через 5 секунд, сбросить таймер
-  //     if (typingTimeout) {
-  //       clearTimeout(typingTimeout);
-  //       setTypingTimeout(null);
-  //     }
-  //   }
-  // };
-
-
 
   useEffect(() => {
     simulateUserActivity();
@@ -117,13 +89,13 @@ const UserList: FC = observer(() => {
           <ListItem sx={{width: '100%'}}
                     key={user.id}
                     disablePadding
-
           >
             <ListItemButton
-              onClick={() => {
-                UserChat.openUserChat(user.id)
-                UserStore.resetUnreadMessages(user.id)
-              }
+              onClick={
+                () => {
+                  UserChat.openUserChat(user.id)
+                  UserStore.resetUnreadMessages(user.id)
+                }
               }
               disableRipple
               sx={{
@@ -138,7 +110,8 @@ const UserList: FC = observer(() => {
             >
               <ListItemAvatar>
                 <UserAvatar variantBadge={user.online.status ? 'dot' : 'standard'}
-                            src={index % 2 === 0 ? user.avatar : ''} name={`${user.first_name} ${user.last_name}`}/>
+                            src={index % 2 === 0 ? user.avatar : ''} // отображение аватара у нечетных пользователей
+                            name={`${user.first_name} ${user.last_name}`}/>
               </ListItemAvatar>
               <ListItemText
                 // sx={{width: '80%'}}
@@ -172,8 +145,9 @@ const UserList: FC = observer(() => {
                   lineHeight: 'normal',
                   letterSpacing: '0.4px',
                 }}
-                secondary={<StyledBadge badgeContent={user.unreadMessages}
-                                        color={'primary'}
+                secondary={<Badge badgeContent={user.unreadMessages}
+                                        className={userList('Badge')}
+                                        // color={'primary'}
                                         max={999}
                 />}
               />

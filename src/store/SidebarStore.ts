@@ -1,6 +1,6 @@
 import {makeAutoObservable} from "mobx";
 
-class Sidebar {
+class SidebarStore {
   visible = false
   constructor() {
   makeAutoObservable(this)
@@ -17,5 +17,5 @@ class Sidebar {
 
 }
 
-export default new Sidebar()
+export default new SidebarStore()
 

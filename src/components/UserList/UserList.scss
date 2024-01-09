@@ -1,0 +1,22 @@
+.UserList-Badge {
+  & .MuiBadge-badge {
+    right: -20px;
+    top: 3px;
+    border-radius: 11px;
+    padding: 12px 9px;
+    background: #267FDB;
+    box-shadow: 0 3px 7px 0 rgba(17, 68, 117, 0.35);
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Roboto, serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+    letter-spacing: 0.4px;
+
+  }
+
+}
