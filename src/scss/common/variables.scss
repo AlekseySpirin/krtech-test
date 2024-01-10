@@ -4,8 +4,24 @@ $font-weights: (
         'medium': 500,
         'bold': 700
 );
-
+$font-size: (
+        'sm': 12px,
+        'md': 14px,
+        'lg': 18px
+);
 $colors: (
         'primary': #2680D9,
         'secondary': #E7ECF1
-)
+);
+
+$text-color: (
+        'primary': #000,
+        'secondary': #114475,
+        'tertiary': #2580DB,
+        'placeholder': #6D84A0
+);
+
+
+$drawer-width: 247px;
+$sidebar-border-radius: 4px;
+$sidebar-icon-button-width: 83%;
