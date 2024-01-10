@@ -1,0 +1,81 @@
+@import "../../scss/common/variables";
+
+.Options {
+  justify-content: center;
+
+  &-Item {
+    display: block;
+  }
+
+  &-Icon {
+    &.MuiSvgIcon-root {
+      color: #fff;
+      width: 24px;
+      height: 24px;
+    }
+
+    &.MuiListItemIcon-root {
+      min-width: 0;
+    }
+  }
+
+  &-Text {
+    display: none;
+    color: #fff;
+    margin-left: 20px;
+
+    & span {
+      font-size: map-get($font-size, 'md');
+      font-weight: map-get($font-weights, 'bold');
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.1px;
+      text-transform: uppercase;
+      color: #FFF;
+      font-feature-settings: 'clig' off, 'liga' off;
+      //text-transform: uppercase;
+    }
+
+    &.opened {
+      display: block;
+    }
+  }
+
+  &-Button {
+    min-height: 72px;
+    display: flex;
+
+    &.MuiListItemButton-root {
+      justify-content: center;
+      padding: 8px 28px;
+    }
+  }
+  &-Badge {
+    &_place_icon {
+      & span {
+        border-radius: 11px;
+        font-size: 8px;
+        line-height: 20px;
+        padding: 0 2px;
+        min-width: 14px;
+        height: 14px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.4px;
+      }
+    }
+
+    &_place_text {
+      & span {
+        padding: 7px;
+        margin-right: 5px;
+        font-size: 12px;
+        min-width: 25px;
+        border-radius: 50%;
+        height: 25px;
+      }
+    }
+
+  }
+}
+
