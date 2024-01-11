@@ -1,13 +1,13 @@
 import React, {FC} from 'react';
 import {Badge, Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText} from "@mui/material";
 import SettingsIcon from '@mui/icons-material/Settings';
-import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 import {ReactJSXElement} from "@emotion/react/types/jsx-namespace";
 import UserStore from "../../store/UserStore";
 import SidebarStore from "../../store/SidebarStore";
 import {observer} from "mobx-react-lite";
 import {cn} from "@bem-react/classname";
 import './Options.scss'
+import DialogIcon from "../Icon/DialogIcon";
 
 
 interface IOption {
@@ -29,7 +29,7 @@ const Options: FC = observer(() => {
   const optionList: IOption[] = [
     {
       name: 'Диалоги',
-      icon: <QuestionAnswerIcon className={options('Icon')}/>
+      icon: <DialogIcon />
     },
     {
       name: 'Настройки',

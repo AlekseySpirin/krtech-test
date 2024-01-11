@@ -13,6 +13,7 @@ const Main: FC = () => {
         <UserList/>
       </Grid>
       <Divider orientation="vertical" flexItem/>
+      {/*настроить грид контейнер*/}
       <Grid container item xs>
         <Chat/>
       </Grid>
