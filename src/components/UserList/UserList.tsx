@@ -9,6 +9,7 @@ import {observer} from "mobx-react-lite";
 import {simulateUserActivity} from "../../utils/simulateUserActivity";
 import {cn} from "@bem-react/classname";
 import './UserList.scss'
+import AnimatedDots from "../Icon/AnimatedDots";
 
 
 const UserList: FC = observer(() => {
@@ -28,7 +29,8 @@ const UserList: FC = observer(() => {
   return (
     <Box className={userList('Wrapper')} height={'100%'} width={'100%'}>
       <Stack className={search('Wrapper')}>
-        <Input className={search('Input')} disableUnderline
+        <Input name={'search'}
+          className={search('Input')} disableUnderline
                placeholder={'Поиск'}
                onChange={(e) => setFilterValue(e.target.value)}
         />
@@ -56,7 +58,7 @@ const UserList: FC = observer(() => {
                             primary={`${user.first_name} ${user.last_name}`}
                             secondary={
                               user.messages.length > 0
-                                ? (user.isTyping ? 'Печатает...' : user.messages[user.messages.length - 1].content)
+                                ? (user.isTyping ? <AnimatedDots /> : user.messages[user.messages.length - 1].content)
                                 : `${user.first_name} ${user.last_name} теперь в CrimeaChat`
                             }
               />
