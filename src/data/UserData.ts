@@ -1,15 +1,15 @@
 import {myId} from "../utils/constants";
 
-type ISender = {
+type TSender = {
   id: number
   // first_name: string,
   // last_name: string,
   // avatar: string,
 }
 
-type IMessage = {
+type TMessage = {
   id: string,
-  sender: ISender;
+  sender: TSender;
   timestamp: string,
   date: string,
   time: string,
@@ -17,7 +17,7 @@ type IMessage = {
   // direction: string
 }
 
-type IUser = {
+type TUser = {
   id: number;
   first_name: string;
   last_name: string;
@@ -37,11 +37,11 @@ type IUser = {
   isTyping: boolean;
   wasTyping: boolean;
   unreadMessages: number;
-  messages: IMessage[]
+  messages: TMessage[]
 
 };
 
-const messageList:IMessage[] = [
+const messageList:TMessage[] = [
   {
     id: "message_1",
     sender: {
@@ -94,7 +94,7 @@ const messageList:IMessage[] = [
     },
     timestamp: "2023-12-26T12:30:00Z",
     date: "26 декабря 2023",
-    time: "12:30",
+    time: "12:47",
     content: "Привет, как дела?",
 
   },
@@ -105,7 +105,7 @@ const messageList:IMessage[] = [
     },
     timestamp: "2023-12-26T12:35:00Z",
     date: "26 декабря 2023",
-    time: "12:32",
+    time: "12:48",
     content: "Привет! У меня все отлично, спасибо!",
 
   },
@@ -116,7 +116,7 @@ const messageList:IMessage[] = [
     },
     timestamp: "2023-12-26T12:40:00Z",
     date: "26 декабря 2023",
-    time: "12:35",
+    time: "12:49",
     content: "Что нового?",
 
   },
@@ -127,7 +127,7 @@ const messageList:IMessage[] = [
     },
     timestamp: "2023-12-26T12:45:00Z",
     date: "26 декабря 2023",
-    time: "12:45",
+    time: "12:50",
     content: "Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов. Используется он веб- дизайнерами для вставки на интернет-страницы",
 
   },
@@ -140,7 +140,7 @@ const messageList:IMessage[] = [
     },
     timestamp: "2023-12-26T12:30:00Z",
     date: "26 декабря 2023",
-    time: "12:30",
+    time: "12:51",
     content: "Привет, как дела?",
 
   },
@@ -151,7 +151,7 @@ const messageList:IMessage[] = [
     },
     timestamp: "2023-12-26T12:35:00Z",
     date: "26 декабря 2023",
-    time: "12:32",
+    time: "12:52",
     content: "Привет! У меня все отлично, спасибо!",
 
   },
@@ -162,7 +162,7 @@ const messageList:IMessage[] = [
     },
     timestamp: "2023-12-26T12:40:00Z",
     date: "26 декабря 2023",
-    time: "12:35",
+    time: "12:53",
     content: "Что нового?",
 
   },
@@ -173,14 +173,14 @@ const messageList:IMessage[] = [
     },
     timestamp: "2023-12-26T12:45:00Z",
     date: "26 декабря 2023",
-    time: "12:45",
+    time: "12:54",
     content: "Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов. Используется он веб- дизайнерами для вставки на интернет-страницы",
 
   }
 ]
 
 
-export const userData: IUser[] = [
+export const userData: TUser[] = [
   {
     id: 1,
     first_name: "Averil",
