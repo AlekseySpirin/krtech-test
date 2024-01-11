@@ -7,13 +7,12 @@ import Divider from "@mui/material/Divider";
 
 const Main: FC = () => {
   return (
-    <Grid height={'100vh'} container>
+    <Grid container>
       <Sidebar/>
-      <Grid height={'100vh'} minWidth={345} item xs={2.5}>
+      <Grid item>
         <UserList/>
       </Grid>
       <Divider orientation="vertical" flexItem/>
-      {/*настроить грид контейнер*/}
       <Grid container item xs>
         <Chat/>
       </Grid>

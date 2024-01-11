@@ -4,6 +4,10 @@
   width: $drawer-width;
   transition: width cubic-bezier(0.4, 0, 0.6, 1) 225ms;
   overflow-x: hidden;
+
+  @media (max-width: 1024px) {
+    width: $drawer-width-laptop;
+  }
 }
 
 @mixin closedMixin {
@@ -12,3 +16,5 @@
   overflow-x: hidden;
   width: calc(79px + 1px);
 }
+
+

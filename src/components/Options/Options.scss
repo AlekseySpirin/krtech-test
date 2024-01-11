@@ -45,11 +45,20 @@
     min-height: 72px;
     display: flex;
 
+    &:focus {
+      background-color: #1A69B8;
+
+      &:hover {
+        background-color: #1A69B8;
+      }
+    }
+
     &.MuiListItemButton-root {
       justify-content: center;
       padding: 8px 28px;
     }
   }
+
   &-Badge {
     &_place_icon {
       & span {

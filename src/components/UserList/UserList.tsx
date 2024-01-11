@@ -27,7 +27,7 @@ const UserList: FC = observer(() => {
 
 
   return (
-    <Box className={userList('Wrapper')} height={'100%'} width={'100%'}>
+    <Box className={userList('Wrapper')}>
       <Stack className={search('Wrapper')}>
         <Input name={'search'}
           className={search('Input')} disableUnderline

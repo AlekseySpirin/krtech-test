@@ -2,6 +2,7 @@
 @import "../../scss/common/variables";
 
 .Drawer {
+  height: 100vh;
   width: $drawer-width;
   flex-shrink: 0;
   justify-items: center;
@@ -89,6 +90,7 @@
 
   &-Subtitle {
     color: #fff;
+
     &.MuiTypography-root {
       margin-top: 5px;
       font-size: map-get($font-size, 'md');
