@@ -37,7 +37,7 @@ const UserList: FC = observer(() => {
       </Stack>
       <Divider/>
       <List className={userList()} disablePadding>
-        {filteredUsers.map((user, index) => (
+        {filteredUsers.map((user) => (
           <ListItem className={userList('Item')}
                     key={user.id}>
             <ListItemButton className={userList('Button')}
@@ -50,7 +50,7 @@ const UserList: FC = observer(() => {
                             disableRipple>
               <ListItemAvatar>
                 <UserAvatar variantBadge={user.online.status ? 'dot' : 'standard'}
-                            src={index % 2 === 0 ? user.avatar : ''} // отображение аватара через одного пользователя
+                            src={user.avatar}
                             name={`${user.first_name} ${user.last_name}`}
                 />
               </ListItemAvatar>

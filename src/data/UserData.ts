@@ -257,7 +257,7 @@ export const userData: TUser[] = [
     email: "dcressar1@amazonaws.com",
     gender: "Bigender",
     ip_address: "199.214.126.227",
-    avatar: "https://robohash.org/quiautblanditiis.png?size=50x50&set=set1",
+    avatar: "",
     created: {
       date: "26 декабря 2023",
       time: "12:30",
@@ -278,7 +278,7 @@ export const userData: TUser[] = [
     email: "hhackwell2@archive.org",
     gender: "Female",
     ip_address: "18.186.187.12",
-    avatar: "https://robohash.org/culpadolorumlibero.png?size=50x50&set=set1",
+    avatar: "",
     created: {
       date: "26 декабря 2023",
       time: "12:30",
