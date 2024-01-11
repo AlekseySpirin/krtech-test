@@ -1,21 +1,20 @@
 import React, {FC} from 'react';
 import {Grid} from '@mui/material'
-// import MiniDrawer from "../MiniDrawer/MiniDrawer";
-import SideBar from "../SideBar/SideBar";
+import Sidebar from "../Sidebar/Sidebar";
 import UserList from "../UserList/UserList";
 import Chat from "../Chat/Chat";
 import Divider from "@mui/material/Divider";
 
 const Main: FC = () => {
   return (
-    <Grid height={'100vh'} container>
-      <SideBar/>
-      <Grid height={'100vh'} minWidth={345} item xs={2.5}>
+    <Grid container>
+      <Sidebar/>
+      <Grid item>
         <UserList/>
       </Grid>
       <Divider orientation="vertical" flexItem/>
       <Grid container item xs>
-        <Chat userId={1}/>
+        <Chat/>
       </Grid>
     </Grid>
   );

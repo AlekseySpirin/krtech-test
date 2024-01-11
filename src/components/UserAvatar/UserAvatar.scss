@@ -1,0 +1,21 @@
+.User-Avatar {
+  & .MuiBadge-badge {
+    box-sizing: border-box;
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 2px solid #FFF;
+    background: #71CD50;
+  }
+
+  & .MuiAvatar-root {
+    width: 50px;
+    height: 50px;
+  }
+
+}
+
+
+
+

@@ -1,9 +1,13 @@
 import React, {FC} from 'react';
 import {Badge, Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText} from "@mui/material";
 import SettingsIcon from '@mui/icons-material/Settings';
-import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 import {ReactJSXElement} from "@emotion/react/types/jsx-namespace";
-import {userData} from "../../data/UserData";
+import UserStore from "../../store/UserStore";
+import SidebarStore from "../../store/SidebarStore";
+import {observer} from "mobx-react-lite";
+import {cn} from "@bem-react/classname";
+import './Options.scss'
+import DialogIcon from "../Icon/DialogIcon";
 
 
 interface IOption {
@@ -12,99 +16,58 @@ interface IOption {
 }
 
 
-interface OptionsProps {
-  open: boolean
-}
+const options = cn('Options')
 
+const Options: FC = observer(() => {
 
-const Options: FC<OptionsProps> = ({open}) => {
+  const openedOption = `${SidebarStore.visible ? 'opened' : 'closed'}`;
 
-  const totalMessage = userData.reduce((sum, user) => {
-    return sum + (user.messages.length > 0 ? 1 : 0);
+  const totalMessage = UserStore.users.reduce((sum, user) => {
+    return sum + (user.unreadMessages ? 1 : 0);
   }, 0);
 
   const optionList: IOption[] = [
     {
       name: 'Диалоги',
-      icon: <QuestionAnswerIcon/>
+      icon: <DialogIcon />
     },
     {
       name: 'Настройки',
-      icon: <SettingsIcon/>
+      icon: <SettingsIcon className={options('Icon')}/>
     }
   ]
   return (
-    <Box>
-      {/*<List>*/}
-      {/*  <ListItem disablePadding>*/}
-      {/*    <ListItemButton>*/}
-      {/*      <ListItemIcon>*/}
-      {/*        <ListItemAvatar>*/}
-      {/*          <Avatar>*/}
-      {/*            <QuestionAnswerIcon/>*/}
-      {/*          </Avatar>*/}
-      {/*        </ListItemAvatar>*/}
-      {/*      </ListItemIcon>*/}
-      {/*      <ListItemText primary={'Диалоги'}>*/}
-      {/*      </ListItemText>*/}
-      {/*    </ListItemButton>*/}
-      {/*  </ListItem>*/}
-      {/*  <ListItem disablePadding>*/}
-      {/*    <ListItemButton>*/}
-      {/*      <ListItemIcon>*/}
-      {/*        <ListItemAvatar>*/}
-      {/*          <Avatar>*/}
-      {/*            <SettingsIcon/>*/}
-      {/*          </Avatar>*/}
-      {/*        </ListItemAvatar>*/}
-      {/*      </ListItemIcon>*/}
-      {/*      <ListItemText primary={'Настройки'}>*/}
-      {/*      </ListItemText>*/}
-      {/*    </ListItemButton>*/}
-      {/*  </ListItem>*/}
-      {/*</List>*/}
-      <List>
+    <Box className={options('Container')}>
+      <List className={options('List')}>
         {optionList.map((option) => (
-          <ListItem key={option.name} disablePadding sx={{display: 'block'}}>
-            <ListItemButton
-              sx={{
-                minHeight: 48,
-                justifyContent: open ? 'initial' : 'center',
-                px: 2.5,
-              }}
-            >
-              <ListItemIcon
-                sx={{
-                  minWidth: 0,
-                  mr: open ? 3 : 'auto',
-                  justifyContent: 'center',
-                  color: '#fff'
-                }}
-              >
-                <Badge
-                  invisible={open}
-                  badgeContent={ option.name === 'Диалоги' ? totalMessage : null}
-                  color={'error'}
-                  max={999}
-                  anchorOrigin={{
-                    vertical: 'bottom',
-                    horizontal: 'right',
-                  }}
+          <ListItem className={options('Item')} key={option.name} disablePadding>
+            <ListItemButton className={options('Button')}>
+              <ListItemIcon className={options('Icon')}>
+                <Badge className={options('Badge', {place: 'icon'})}
+                       invisible={SidebarStore.visible}
+                       badgeContent={option.name === 'Диалоги' ? totalMessage : null}
+                       color={'error'}
+                       max={999}
+                       anchorOrigin={{
+                         vertical: 'bottom',
+                         horizontal: 'right',
+                       }}
                 >
                   {option.icon}
                 </Badge>
               </ListItemIcon>
-
-              <ListItemText primary={option.name} sx={{opacity: open ? 1 : 0, color: '#fff'}}/>
-              <Badge
-                invisible={!open}
-                badgeContent={ option.name === 'Диалоги' ? totalMessage : null}
-                color={'error'}
-                max={999}
-                anchorOrigin={{
-                  vertical: 'bottom',
-                  horizontal: 'right',
-                }}
+              <ListItemText className={`${options('Text')} ${openedOption}`}>
+                {option.name}
+              </ListItemText>
+              <Badge className={options('Badge', {place: 'text'})}
+                     invisible={!SidebarStore.visible}
+                     badgeContent={option.name === 'Диалоги' ? totalMessage : null}
+                     color={'error'}
+                     max={999}
+                     anchorOrigin={{
+                       vertical: 'bottom',
+                       horizontal: 'right',
+                     }}
               />
             </ListItemButton>
           </ListItem>
@@ -112,6 +75,6 @@ const Options: FC<OptionsProps> = ({open}) => {
       </List>
     </Box>
   );
-};
+});
 
 export default Options;

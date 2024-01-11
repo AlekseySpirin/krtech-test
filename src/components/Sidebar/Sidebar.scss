@@ -1,0 +1,166 @@
+@import "../../scss/common/mixins";
+@import "../../scss/common/variables";
+
+.Drawer {
+  height: 100vh;
+  width: $drawer-width;
+  flex-shrink: 0;
+  justify-items: center;
+  white-space: nowrap;
+  box-sizing: border-box;
+
+  &-Toggle-button {
+    &.MuiIconButton-root {
+      width: $sidebar-icon-button-width;
+      height: 30px;
+      border-radius: $sidebar-border-radius;
+      color: #2680D9;
+      background-color: #58AAFC;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.25);
+      }
+
+      &.closed {
+        width: 40px;
+      }
+
+    }
+
+
+  }
+
+  &-Icon {
+    &.MuiSvgIcon-root {
+      font-size: 32px;
+    }
+  }
+
+  &-Avatar {
+    &.MuiAvatar-root {
+      border: 2px solid #FFF;
+    }
+
+    &.opened {
+      &.MuiAvatar-root {
+        width: 80px;
+        height: 80px;
+
+      }
+
+    }
+  }
+
+  &-Option-wrapper {
+    height: 100%;
+    margin-bottom: 20px;
+    justify-content: space-between;
+
+    &.opened {
+      margin-top: 22px;
+    }
+  }
+
+  &-Icon-wrapper {
+    &.MuiStack-root {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+
+  &-Title {
+    color: #fff;
+
+    &.MuiTypography-root {
+      margin-top: 5px;
+      font-size: map-get($font-size, 'lg');
+      font-weight: map-get($font-weights, 'bold');
+    }
+
+    &.opened {
+      display: inline-block;
+
+    }
+
+    &.closed {
+      display: none;
+    }
+  }
+
+  &-Subtitle {
+    color: #fff;
+
+    &.MuiTypography-root {
+      margin-top: 5px;
+      font-size: map-get($font-size, 'md');
+      font-weight: map-get($font-weights, 'regular');
+    }
+
+    &.opened {
+      opacity: 1;
+    }
+
+    &.closed {
+      opacity: 0;
+    }
+  }
+
+  &-Status {
+
+    &.MuiStack-root {
+      flex-direction: row;
+      align-items: center;
+
+      & > * {
+        margin-right: 11px;
+      }
+    }
+
+    &.opened {
+      display: flex;
+    }
+
+    &.closed {
+      display: none;
+    }
+  }
+
+  &.opened {
+    @include openedMixin;
+
+    & .MuiDrawer-paper {
+      @include openedMixin;
+    }
+  }
+
+  &-Badge {
+    & .MuiBadge-badge {
+      background-color: #44b700;
+      padding: 3px 3px;
+      border-radius: 50%;
+    }
+  }
+
+  &-Header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+
+    &.closed {
+      margin-top: 8px;
+    }
+  }
+
+  &.closed {
+    @include closedMixin;
+
+    & .MuiDrawer-paper {
+      @include closedMixin;
+    }
+  }
+
+}
+

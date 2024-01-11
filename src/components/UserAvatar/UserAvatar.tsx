@@ -1,29 +1,26 @@
 import React, {FC} from 'react';
 import Avatar, {AvatarProps} from '@mui/material/Avatar';
-import {styled} from '@mui/material/styles';
 import Badge from '@mui/material/Badge';
 
-interface IUserAvatarProps {
+import './UserAvatar.scss'
+import {cn} from "@bem-react/classname";
+
+
+const userAvatar = cn('User', 'Avatar')
+
+type TUserAvatarProps = {
   name: string,
   variantBadge?: 'dot' | 'standard' | undefined
 
 }
 
-const UserAvatar: FC<IUserAvatarProps & AvatarProps> = ({name, variantBadge, ...props}) => {
 
-  const StyledBadge = styled(Badge)(({theme}) => ({
-    '& .MuiBadge-badge': {
-      backgroundColor: '#44b700',
-      color: '#44b700',
-      boxShadow: `0 0 0 2px ${theme.palette.background.paper}`,
-    },
-  }));
+const UserAvatar: FC<TUserAvatarProps & AvatarProps> = ({name, variantBadge, ...props}) => {
 
   function stringToColor(string: string) {
     let hash = 0;
     let i;
 
-    /* eslint-disable no-bitwise */
     for (i = 0; i < string.length; i += 1) {
       hash = string.charCodeAt(i) + ((hash << 5) - hash);
     }
@@ -34,7 +31,6 @@ const UserAvatar: FC<IUserAvatarProps & AvatarProps> = ({name, variantBadge, ...
       const value = (hash >> (i * 8)) & 0xff;
       color += `00${value.toString(16)}`.slice(-2);
     }
-    /* eslint-enable no-bitwise */
 
     return color;
   }
@@ -49,13 +45,14 @@ const UserAvatar: FC<IUserAvatarProps & AvatarProps> = ({name, variantBadge, ...
   }
 
   return (
-    <StyledBadge
+    <Badge
+      className={userAvatar()}
       overlap="circular"
       anchorOrigin={{vertical: 'bottom', horizontal: 'right'}}
       variant={variantBadge}
     >
       <Avatar {...stringAvatar(name)} alt={'Аватар пользователя'} {...props} />
-    </StyledBadge>
+    </Badge>
 
   );
 };

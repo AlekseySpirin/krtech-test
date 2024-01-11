@@ -1,0 +1,187 @@
+@import "../../scss/common/variables";
+
+.Chat {
+  &.MuiGrid-root {
+    max-width: 100%;
+    flex-direction: column;
+  }
+
+  &-TitleWrapper {
+    min-height: 70px;
+    max-width: 100%;
+
+
+    &.MuiGrid-root {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+  }
+
+  &-Title {
+    &.MuiTypography-root {
+      color: map-get($text-color, 'secondary');
+      font-size: map-get($font-size, 'md');
+      font-weight: map-get($font-weights, 'bold');
+      line-height: 20px;
+      letter-spacing: 0.4px;
+    }
+  }
+
+  &-Subtitle {
+    &.MuiTypography-root {
+      text-align: center;
+      color: map-get($text-color, 'tertiary');
+      font-size: map-get($font-size, 'md');
+      font-weight: map-get($font-weights, 'regular');
+      line-height: 20px;
+      letter-spacing: 0.4px;
+      padding-top: 7px;
+    }
+  }
+
+
+}
+
+.Messages-Wrapper {
+  background-color: map-get($colors, 'secondary');
+  width: 100%;
+  position: relative;
+  overflow-y: scroll;
+  max-height: 100%;
+
+  &::-webkit-scrollbar {
+    width: 8px; // Ширина полосы скролла
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #11447580; // Цвет полосы скролла
+    border-radius: 3px; // Скругление углов полосы скролла
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: map-get($colors, 'secondary');
+    border-radius: 3px; // Скругление углов фона скролла
+  }
+
+  & {
+    scrollbar-width: thin; // Установить ширину полосы прокрутки в Firefox
+    scrollbar-color: #11447580 transparent; // Цвет полосы и фона скролла (для Firefox)
+  }
+}
+
+.Messages {
+  &-ItemWrapper {
+    padding: 10px 30px;
+
+    &.sender {
+      flex-direction: row;
+
+    }
+
+    &.user {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &-Item {
+    max-width: 470px;
+    display: inline-flex;
+    padding: 8px 16px 6px 16px;
+    align-items: flex-end;
+    gap: 10px;
+
+    &.sender {
+      background-color: #FFF;
+      border-radius: 16px 16px 16px 4px;
+      color: map-get($text-color, 'secondary');
+      margin-right: 20px;
+      font-size: map-get($font-size, 'md');
+      font-weight: map-get($font-weights, 'regular');
+    }
+
+    &.user {
+      background-color: #267FDB;
+      border-radius: 16px 16px 4px 16px;
+      color: #fff;
+      margin-left: 20px;
+      font-size: map-get($font-size, 'md');
+      font-weight: map-get($font-weights, 'regular');
+
+    }
+  }
+
+  &-Text {
+    &.MuiTypography-root {
+      color: map-get($text-color, 'tertiary');
+      font-size: map-get($font-size, 'md');
+      font-weight: map-get($font-weights, 'regular');
+      line-height: 20px;
+      letter-spacing: 0.4px;
+
+      &.sender {
+        color: map-get($text-color, 'secondary');
+        font-size: map-get($font-size, 'md');
+        font-weight: map-get($font-weights, 'regular');
+      }
+
+      &.user {
+        color: #FFFFFF;
+        font-size: map-get($font-size, 'md');
+        font-weight: map-get($font-weights, 'regular');
+
+      }
+    }
+  }
+
+  &-Time {
+    &.MuiTypography-root {
+      margin-bottom: -5px;
+      font-size: map-get($font-size, 'sm');
+      font-weight: map-get($font-weights, 'regular');
+      line-height: 20px;
+      letter-spacing: 0.4px;
+
+      &.sender {
+        color: map-get($text-color, 'secondary');
+      }
+
+      &.user {
+        color: #FFFFFFCC;
+      }
+    }
+
+  }
+
+  &-InputWrapper {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    min-height: 54px;
+    width: 100%;
+    background-color: map-get($colors, 'default')
+  }
+
+  &-Input {
+    padding-left: 12px;
+    border: none;
+    border-radius: 15px;
+    min-height: 17px;
+    background-color: map-get($colors, 'secondary');
+    width: 95%;
+    align-items: center;
+
+    & .MuiInput-input {
+      color: map-get($text-color, 'placeholder');
+      font-size: map-get($font-size, 'md');
+      font-weight: map-get($font-weights, 'regular');
+      font-style: normal;
+
+      line-height: 20px; /* 142.857% */
+      letter-spacing: 0.4px;
+    }
+  }
+
+}
+
