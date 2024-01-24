@@ -1,0 +1,25 @@
+.Login {
+  background-color: #ffffee;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+
+  &-Wrapper {
+    display: flex;
+    border-radius: 15px;
+    min-width: 450px;
+    max-width: 600px;
+    height: 25vh;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+  }
+
+  &-Button {
+
+  }
+
+  &-Text {
+    padding-left: 10px;
+  }
+}
