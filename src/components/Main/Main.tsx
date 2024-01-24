@@ -9,13 +9,9 @@ const Main: FC = () => {
   return (
     <Grid container>
       <Sidebar/>
-      <Grid item>
-        <UserList/>
-      </Grid>
+      <UserList/>
       <Divider orientation="vertical" flexItem/>
-      <Grid container item xs>
-        <Chat/>
-      </Grid>
+      <Chat/>
     </Grid>
   );
 };

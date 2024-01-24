@@ -1,4 +1,4 @@
-import React, { createContext } from 'react';
+import React, {createContext} from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
 import App from './App';
@@ -6,12 +6,13 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-import { initializeApp } from 'firebase/app';
-import { getAnalytics, Analytics } from 'firebase/analytics';
-import { getAuth, Auth } from 'firebase/auth';
-import { getFirestore, Firestore } from 'firebase/firestore';
+import {initializeApp} from 'firebase/app';
+import {Analytics, getAnalytics} from 'firebase/analytics';
+import {Auth, getAuth} from 'firebase/auth';
+import {Firestore, getFirestore} from 'firebase/firestore';
+import {BrowserRouter} from "react-router-dom";
 
-interface FirebaseContextProps {
+export interface FirebaseContextProps {
   analytics: Analytics;
   auth: Auth;
   firestore: Firestore;
@@ -35,6 +36,7 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const auth = getAuth(app);
 const firestore = getFirestore(app);
+console.log(auth)
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -42,8 +44,10 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Context.Provider
-      value={{ analytics, auth, firestore }}>
-      <App />
+      value={{analytics, auth, firestore}}>
+      <BrowserRouter>
+        <App/>
+      </BrowserRouter>
     </Context.Provider>
   </React.StrictMode>
 );

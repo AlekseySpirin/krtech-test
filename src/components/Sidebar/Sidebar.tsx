@@ -1,5 +1,5 @@
-import React, {FC} from 'react';
-import {Badge, Box, IconButton, Stack, Typography} from '@mui/material';
+import React, {FC, useContext} from 'react';
+import {Badge, Box, Button, IconButton, Stack, Typography} from '@mui/material';
 import Options from '../Options/Options';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
@@ -9,6 +9,8 @@ import {observer} from 'mobx-react-lite';
 import SidebarStore from '../../store/SidebarStore';
 import './Sidebar.scss';
 import {cn} from "@bem-react/classname";
+import {Context, FirebaseContextProps} from "../../index";
+import {useAuthState} from "react-firebase-hooks/auth";
 
 type TUser = {
   id: number;
@@ -34,7 +36,8 @@ const user: TUser = {
 const drawer = cn('Drawer')
 
 const Sidebar: FC = observer(() => {
-
+  const {auth} = useContext(Context) as FirebaseContextProps;
+  const [currentUser] = useAuthState(auth)
   const activeSidebar = `${SidebarStore.visible ? 'opened' : 'closed'}`
 
   return (
@@ -67,6 +70,12 @@ const Sidebar: FC = observer(() => {
       <Stack className={`${drawer('Option-wrapper')} ${activeSidebar}`}>
         <Options/>
         <Stack className={drawer('Icon-wrapper')}>
+          <Button className={`${drawer('Exit-button')} ${activeSidebar}`}
+            variant={'contained'}
+                  onClick={() => auth.signOut()}
+          >
+            Выйти
+          </Button>
           <IconButton className={`${drawer('Toggle-button')} ${activeSidebar}`}
                       size={'large'}
                       onClick={() => (SidebarStore.visible ? SidebarStore.closed() : SidebarStore.opened())}>

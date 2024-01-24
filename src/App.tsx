@@ -1,13 +1,13 @@
 import React from 'react';
-// import UserList from "./components/UserList/UserList";
 import './App.scss';
-import Main from "./components/Main/Main";
+import AppRouter from "./components/AppRouter/AppRouter";
 
 
 function App() {
+
   return (
     <div className="App">
-      <Main/>
+      <AppRouter/>
     </div>
   );
 }
